@@ -1,0 +1,1774 @@
+[
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "description": "AI-first 代码编辑器，支持整项目上下文理解和多文件编辑。2026年AI编程工具收入第一，$2B ARR。",
+    "url": "https://cursor.sh",
+    "category": "ai-ide",
+    "pricing": "免费 + Pro $20/月",
+    "tags": [
+      "IDE",
+      "Agent",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "整项目上下文理解",
+      "多文件编辑",
+      "MCP原生支持"
+    ],
+    "cons": [
+      "闭源",
+      "Pro版价格较高"
+    ]
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "description": "微软旗下AI编程助手，470万付费用户，深度集成VS Code和GitHub生态。",
+    "url": "https://github.com/features/copilot",
+    "category": "ai-ide",
+    "pricing": "免费 + Business $19/月",
+    "tags": [
+      "IDE",
+      "代码补全",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "VS Code深度集成",
+      "GitHub生态",
+      "用户基数最大"
+    ],
+    "cons": [
+      "满意度落后Claude Code",
+      "定制性弱"
+    ]
+  },
+  {
+    "slug": "claude-code",
+    "name": "Claude Code",
+    "description": "Anthropic 推出的命令行 AI 编程代理，2026年满意度排名第一（46%），12个月6倍增长。",
+    "url": "https://claude.ai/code",
+    "category": "ai-ide",
+    "pricing": "API按量计费",
+    "tags": [
+      "CLI",
+      "Agent",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "满意度第一",
+      "Agentic workflow",
+      "推理能力最强"
+    ],
+    "cons": [
+      "仅CLI",
+      "需API付费"
+    ]
+  },
+  {
+    "slug": "windsurf",
+    "name": "Windsurf",
+    "description": "Codeium 推出的 AI IDE，约60万付费用户，慷慨的免费额度，$100M ARR。",
+    "url": "https://codeium.com/windsurf",
+    "category": "ai-ide",
+    "pricing": "免费 + Pro $15/月",
+    "tags": [
+      "IDE",
+      "代码补全",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "免费额度慷慨",
+      "价格友好",
+      "多IDE支持"
+    ],
+    "cons": [
+      "市场份额落后Cursor"
+    ]
+  },
+  {
+    "slug": "cline",
+    "name": "Cline",
+    "description": "开源 AI 编程代理，VS Code 插件，支持多模型切换，社区活跃度极高。",
+    "url": "https://github.com/cline/cline",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "IDE",
+      "Agent",
+      "开源"
+    ],
+    "stars": 28000,
+    "featured": true,
+    "pros": [
+      "完全开源",
+      "多模型支持",
+      "社区活跃"
+    ],
+    "cons": [
+      "需自行配置模型API"
+    ]
+  },
+  {
+    "slug": "zed",
+    "name": "Zed",
+    "description": "高性能协作代码编辑器，原生MCP支持，Rust构建，极速响应。",
+    "url": "https://zed.dev",
+    "category": "ai-ide",
+    "pricing": "免费",
+    "tags": [
+      "编辑器",
+      "协作",
+      "MCP"
+    ],
+    "stars": 55000,
+    "featured": false,
+    "pros": [
+      "极快",
+      "原生协作",
+      "MCP集成"
+    ],
+    "cons": [
+      "插件生态不足"
+    ]
+  },
+  {
+    "slug": "replit",
+    "name": "Replit",
+    "description": "在线IDE + 全栈部署平台，2026年全面支持MCP，一键部署AI应用。",
+    "url": "https://replit.com",
+    "category": "ai-ide",
+    "pricing": "免费 + Pro $20/月",
+    "tags": [
+      "在线IDE",
+      "部署",
+      "MCP"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "零配置",
+      "一键部署",
+      "移动端可用"
+    ],
+    "cons": [
+      "网络依赖",
+      "大型项目受限"
+    ]
+  },
+  {
+    "slug": "tabnine",
+    "name": "Tabnine",
+    "description": "企业级AI代码补全，40万企业用户，支持私有化部署，IP清洁训练数据。",
+    "url": "https://tabnine.com",
+    "category": "ai-ide",
+    "pricing": "免费 + Pro $12/月",
+    "tags": [
+      "补全",
+      "企业",
+      "自托管"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "企业合规",
+      "自托管",
+      "IP清洁"
+    ],
+    "cons": [
+      "补全质量不及Copilot"
+    ]
+  },
+  {
+    "slug": "amazon-q",
+    "name": "Amazon Q Developer",
+    "description": "AWS 原生AI编程助手，深度集成AWS控制台，免费向AWS用户开放。",
+    "url": "https://aws.amazon.com/q/developer",
+    "category": "ai-ide",
+    "pricing": "免费（AWS用户）",
+    "tags": [
+      "AWS",
+      "云原生",
+      "免费"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "AWS深度集成",
+      "免费",
+      "基础设施即代码"
+    ],
+    "cons": [
+      "仅限AWS生态"
+    ]
+  },
+  {
+    "slug": "google-studio-bot",
+    "name": "Google Studio Bot",
+    "description": "Chrome DevTools 内置AI编程助手，2026年5月公测，基于Gemini，零配置。",
+    "url": "https://developer.chrome.com",
+    "category": "ai-ide",
+    "pricing": "免费",
+    "tags": [
+      "Chrome",
+      "前端",
+      "Gemini"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "零配置",
+      "浏览器原生",
+      "前端专用"
+    ],
+    "cons": [
+      "仅前端",
+      "公测阶段"
+    ]
+  },
+  {
+    "slug": "langgraph",
+    "name": "LangGraph",
+    "description": "LangChain 推出的 AI Agent 编排框架，支持状态流、多Agent协作，企业级部署。",
+    "url": "https://langchain.com/langgraph",
+    "category": "agent-framework",
+    "pricing": "免费开源 + Cloud付费",
+    "tags": [
+      "框架",
+      "Agent",
+      "Python"
+    ],
+    "stars": 12000,
+    "featured": true,
+    "pros": [
+      "状态管理成熟",
+      "多Agent",
+      "生态完善"
+    ],
+    "cons": [
+      "学习曲线陡峭"
+    ]
+  },
+  {
+    "slug": "crewai",
+    "name": "CrewAI",
+    "description": "多 Agent 协作框架，模拟团队角色分工（CEO、工程师、设计师），2026年增长最快。",
+    "url": "https://crewai.com",
+    "category": "agent-framework",
+    "pricing": "免费开源 + Enterprise",
+    "tags": [
+      "框架",
+      "多Agent",
+      "Python"
+    ],
+    "stars": 25000,
+    "featured": true,
+    "pros": [
+      "角色分工直观",
+      "上手快",
+      "增长最快"
+    ],
+    "cons": [
+      "复杂场景灵活性不足"
+    ]
+  },
+  {
+    "slug": "autogen",
+    "name": "AutoGen",
+    "description": "微软开源的多Agent对话框架，支持复杂Agent间对话和任务分配。",
+    "url": "https://github.com/microsoft/autogen",
+    "category": "agent-framework",
+    "pricing": "免费开源",
+    "tags": [
+      "框架",
+      "多Agent",
+      "微软"
+    ],
+    "stars": 38000,
+    "featured": false,
+    "pros": [
+      "微软背书",
+      "多Agent对话",
+      "学术支持好"
+    ],
+    "cons": [
+      "API变动频繁"
+    ]
+  },
+  {
+    "slug": "dify",
+    "name": "Dify",
+    "description": "开源 LLMOps 平台，可视化构建AI应用，支持RAG、Agent、工作流编排。",
+    "url": "https://dify.ai",
+    "category": "agent-framework",
+    "pricing": "免费开源 + Cloud付费",
+    "tags": [
+      "低代码",
+      "RAG",
+      "开源"
+    ],
+    "stars": 65000,
+    "featured": true,
+    "pros": [
+      "可视化",
+      "RAG内置",
+      "社区最大"
+    ],
+    "cons": [
+      "复杂定制受限"
+    ]
+  },
+  {
+    "slug": "devin",
+    "name": "Devin",
+    "description": "Cognition AI 推出的全自动AI软件工程师，能独立完成bug修复和功能开发。",
+    "url": "https://cognition.ai",
+    "category": "agent-framework",
+    "pricing": "$500/月",
+    "tags": [
+      "全自动",
+      "工程师",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "全自动开发",
+      "自主debug",
+      "PR提交"
+    ],
+    "cons": [
+      "价格极高",
+      "适用场景有限"
+    ]
+  },
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "description": "开源工作流自动化平台，AI节点支持LangChain集成，可自托管。",
+    "url": "https://n8n.io",
+    "category": "agent-framework",
+    "pricing": "免费开源 + Cloud $20/月",
+    "tags": [
+      "工作流",
+      "开源",
+      "自托管"
+    ],
+    "stars": 55000,
+    "featured": false,
+    "pros": [
+      "400+集成",
+      "可视化",
+      "自托管"
+    ],
+    "cons": [
+      "AI节点偏基础"
+    ]
+  },
+  {
+    "slug": "flowise",
+    "name": "Flowise",
+    "description": "低代码 LLM 应用构建器，拖拽式构建RAG和Agent流程。",
+    "url": "https://flowiseai.com",
+    "category": "agent-framework",
+    "pricing": "免费开源",
+    "tags": [
+      "低代码",
+      "拖拽",
+      "开源"
+    ],
+    "stars": 35000,
+    "featured": false,
+    "pros": [
+      "拖拽构建",
+      "零代码",
+      "开源"
+    ],
+    "cons": [
+      "性能上限低"
+    ]
+  },
+  {
+    "slug": "openai-codex",
+    "name": "OpenAI Codex CLI",
+    "description": "OpenAI 推出的命令行AI编程代理，开源的轻量级Agent，支持终端全操作。",
+    "url": "https://github.com/openai/codex",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "CLI",
+      "Agent",
+      "开源"
+    ],
+    "stars": 25000,
+    "featured": false,
+    "pros": [
+      "开源",
+      "OpenAI生态",
+      "轻量"
+    ],
+    "cons": [
+      "依赖OpenAI API"
+    ]
+  },
+  {
+    "slug": "smithery",
+    "name": "Smithery",
+    "description": "MCP 工具注册与发现平台，连接300+ MCP服务器到你的AI应用。",
+    "url": "https://smithery.ai",
+    "category": "mcp-tools",
+    "pricing": "免费",
+    "tags": [
+      "MCP",
+      "工具注册",
+      "开源"
+    ],
+    "stars": 8000,
+    "featured": true,
+    "pros": [
+      "最大MCP注册中心",
+      "一键连接",
+      "社区驱动"
+    ],
+    "cons": [
+      "服务器质量参差"
+    ]
+  },
+  {
+    "slug": "cursor-directory",
+    "name": "Cursor Directory",
+    "description": ".cursorrules 和 MCP 工具聚合目录，$35K MRR，AI导航站变现标杆。",
+    "url": "https://cursor.directory",
+    "category": "mcp-tools",
+    "pricing": "免费 + 付费推广位",
+    "tags": [
+      "MCP",
+      "规则",
+      "导航"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "已验证变现模型",
+      "精准开发者流量"
+    ],
+    "cons": [
+      "品类单一"
+    ]
+  },
+  {
+    "slug": "mcp-atlassian",
+    "name": "MCP Atlassian",
+    "description": "官方 MCP 服务器，连接 Jira 和 Confluence，AI直接操作项目管理。",
+    "url": "https://github.com/atlassian/mcp-server",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "Jira",
+      "项目管理"
+    ],
+    "stars": 3000,
+    "featured": false,
+    "pros": [
+      "官方维护",
+      "Jira深度集成"
+    ],
+    "cons": [
+      "仅限Atlassian生态"
+    ]
+  },
+  {
+    "slug": "mcp-brave-search",
+    "name": "Brave Search MCP",
+    "description": "Brave 官方MCP服务器，为AI Agent提供实时联网搜索能力。",
+    "url": "https://brave.com/search/api",
+    "category": "mcp-tools",
+    "pricing": "免费（需API Key）",
+    "tags": [
+      "MCP",
+      "搜索",
+      "联网"
+    ],
+    "stars": 2000,
+    "featured": false,
+    "pros": [
+      "实时搜索",
+      "隐私友好"
+    ],
+    "cons": [
+      "需API Key"
+    ]
+  },
+  {
+    "slug": "mcp-puppeteer",
+    "name": "Puppeteer MCP",
+    "description": "浏览器自动化MCP服务器，AI Agent可控制Chrome完成网页操作。",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "浏览器",
+      "自动化"
+    ],
+    "stars": 5000,
+    "featured": false,
+    "pros": [
+      "浏览器全控制",
+      "截图/PDF生成"
+    ],
+    "cons": [
+      "需Chrome环境"
+    ]
+  },
+  {
+    "slug": "github-copilot-review",
+    "name": "GitHub Copilot Code Review",
+    "description": "Copilot 代码审查功能，2025年4月GA，首月100万用户，支持全语言逐行审查。",
+    "url": "https://github.com/features/copilot",
+    "category": "code-review",
+    "pricing": "含 Copilot 订阅",
+    "tags": [
+      "PR审查",
+      "微软",
+      "全语言"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "GitHub原生",
+      "首月100万用户",
+      "一键应用"
+    ],
+    "cons": [
+      "需Copilot订阅"
+    ]
+  },
+  {
+    "slug": "coderabbit",
+    "name": "CodeRabbit",
+    "description": "AI 代码审查机器人，自动对PR进行逐行审查，$60M融资，$550M估值。",
+    "url": "https://coderabbit.ai",
+    "category": "code-review",
+    "pricing": "免费（PR摘要）+ Pro $24/开发者/月",
+    "tags": [
+      "PR审查",
+      "自动化",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "逐行审查",
+      "PR摘要免费",
+      "融资充足"
+    ],
+    "cons": [
+      "付费版较贵"
+    ]
+  },
+  {
+    "slug": "graphite",
+    "name": "Graphite",
+    "description": "堆叠PR管理+AI代码审查，2026年被Cursor收购，合并AI编程+审查能力。",
+    "url": "https://graphite.dev",
+    "category": "code-review",
+    "pricing": "免费（个人仓库）+ Team $20/人/月",
+    "tags": [
+      "PR管理",
+      "堆叠PR",
+      "AI审查"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "堆叠PR独有",
+      "Cursor整合"
+    ],
+    "cons": [
+      "被收购后方向不明"
+    ]
+  },
+  {
+    "slug": "sonarqube",
+    "name": "SonarQube",
+    "description": "老牌静态代码分析平台，50K行代码免费，企业级代码质量门禁。",
+    "url": "https://sonarsource.com",
+    "category": "code-review",
+    "pricing": "免费 50K LOC + Enterprise 30欧/月",
+    "tags": [
+      "静态分析",
+      "质量门禁",
+      "企业"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "行业标准",
+      "多语言",
+      "合规审计"
+    ],
+    "cons": [
+      "AI能力偏弱"
+    ]
+  },
+  {
+    "slug": "codacy",
+    "name": "Codacy",
+    "description": "AI代码质量守卫，针对AI生成代码的专项检查，IDE内扫描。",
+    "url": "https://codacy.com",
+    "category": "code-review",
+    "pricing": "免费（IDE扫描）+ Pro $18/开发者/月",
+    "tags": [
+      "AI生成代码",
+      "质量",
+      "IDE插件"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "AI代码专项检查",
+      "IDE集成"
+    ],
+    "cons": [
+      "市场较新"
+    ]
+  },
+  {
+    "slug": "sourcery",
+    "name": "Sourcery",
+    "description": "轻量级AI代码审查，专注Python和JavaScript，公共仓库免费。",
+    "url": "https://sourcery.ai",
+    "category": "code-review",
+    "pricing": "免费（公共仓库）+ $12/座/月",
+    "tags": [
+      "轻量",
+      "Python",
+      "JS"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "轻量快速",
+      "Python优化好"
+    ],
+    "cons": [
+      "仅支持Python/JS"
+    ]
+  },
+  {
+    "slug": "codescene",
+    "name": "CodeScene",
+    "description": "行为代码分析工具，基于代码演进数据预测技术债务和团队瓶颈。",
+    "url": "https://codescene.com",
+    "category": "code-review",
+    "pricing": "免费（开源）+ 18欧/作者/月",
+    "tags": [
+      "行为分析",
+      "技术债务",
+      "预测"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "行为分析独特",
+      "预测技术债务"
+    ],
+    "cons": [
+      "非传统代码审查"
+    ]
+  },
+  {
+    "slug": "v0",
+    "name": "v0.dev",
+    "description": "Vercel 推出的 AI UI 生成工具，自然语言描述自动生成 React 页面代码。",
+    "url": "https://v0.dev",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro $20/月",
+    "tags": [
+      "UI生成",
+      "React",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "生成质量高",
+      "Vercel生态",
+      "即时预览"
+    ],
+    "cons": [
+      "仅React/Next.js"
+    ]
+  },
+  {
+    "slug": "bolt",
+    "name": "Bolt.new",
+    "description": "StackBlitz 推出的 AI 全栈应用生成器，一句话生成完整Web应用并一键部署。",
+    "url": "https://bolt.new",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro $20/月",
+    "tags": [
+      "全栈",
+      "部署",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "全栈生成",
+      "一键部署",
+      "WebContainer"
+    ],
+    "cons": [
+      "大型应用受限"
+    ]
+  },
+  {
+    "slug": "lovable",
+    "name": "Lovable",
+    "description": "AI 全栈应用构建平台，支持Supabase集成和自定义域名部署，欧洲团队。",
+    "url": "https://lovable.dev",
+    "category": "dev-tools",
+    "pricing": "免费 + Starter $20/月",
+    "tags": [
+      "全栈",
+      "部署",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "Supabase集成",
+      "欧洲合规"
+    ],
+    "cons": [
+      "社区较Bolt小"
+    ]
+  },
+  {
+    "slug": "mintlify",
+    "name": "Mintlify",
+    "description": "AI 驱动代码文档生成工具，自动从代码中提取API文档，支持多语言。",
+    "url": "https://mintlify.com",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro $150/月",
+    "tags": [
+      "文档",
+      "API",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "自动生成API文档",
+      "美观"
+    ],
+    "cons": [
+      "Pro版价格高"
+    ]
+  },
+  {
+    "slug": "vercel-ai-sdk",
+    "name": "Vercel AI SDK",
+    "description": "Vercel 官方 AI 开发工具包，统一API接入OpenAI、Anthropic、Google等模型。",
+    "url": "https://sdk.vercel.ai",
+    "category": "dev-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "SDK",
+      "统一API",
+      "开源"
+    ],
+    "stars": 15000,
+    "featured": true,
+    "pros": [
+      "统一API",
+      "流式响应",
+      "Vercel原生"
+    ],
+    "cons": [
+      "仅适合Web应用"
+    ]
+  },
+  {
+    "slug": "firebase-studio",
+    "name": "Firebase Studio",
+    "description": "Google 全栈AI开发搭档，AI帮你设计数据库、生成API、写前端、一键部署。",
+    "url": "https://firebase.google.com",
+    "category": "dev-tools",
+    "pricing": "免费额度 + 按量付费",
+    "tags": [
+      "全栈",
+      "Google",
+      "部署"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "Google生态",
+      "全栈覆盖",
+      "一键部署"
+    ],
+    "cons": [
+      "绑定Google Cloud"
+    ]
+  },
+  {
+    "slug": "codeium",
+    "name": "Codeium",
+    "description": "AI代码补全与搜索，支持40+ IDE，企业自托管方案，注重代码隐私。",
+    "url": "https://codeium.com",
+    "category": "ai-ide",
+    "pricing": "免费 + Teams $15/人/月",
+    "tags": [
+      "补全",
+      "搜索",
+      "闭源"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "40+ IDE支持",
+      "自托管",
+      "隐私优先"
+    ],
+    "cons": [
+      "补全质量不如Copilot"
+    ]
+  },
+  {
+    "slug": "sourcegraph-cody",
+    "name": "Sourcegraph Cody",
+    "description": "企业级AI编程助手，全代码库理解，MCP原生支持，SSO企业认证。",
+    "url": "https://sourcegraph.com/cody",
+    "category": "ai-ide",
+    "pricing": "免费 + Enterprise",
+    "tags": [
+      "企业",
+      "MCP",
+      "代码库"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "全代码库理解",
+      "企业SSO",
+      "MCP"
+    ],
+    "cons": [
+      "个人版功能受限"
+    ]
+  },
+  {
+    "slug": "opencat",
+    "name": "OpenCat",
+    "description": "开源的多模型AI客户端，支持ChatGPT、Claude、Gemini等，本地优先。",
+    "url": "https://opencat.app",
+    "category": "dev-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "客户端",
+      "开源",
+      "多模型"
+    ],
+    "stars": 12000,
+    "featured": false,
+    "pros": [
+      "本地运行",
+      "多模型",
+      "开源"
+    ],
+    "cons": [
+      "仅macOS/iOS"
+    ]
+  },
+  {
+    "slug": "postman-ai",
+    "name": "Postman AI",
+    "description": "Postman 内置AI助手，自动生成API测试用例、Mock数据和文档。",
+    "url": "https://postman.com",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro $14/月",
+    "tags": [
+      "API",
+      "测试",
+      "文档"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "API测试必备",
+      "AI生成用例"
+    ],
+    "cons": [
+      "仅API测试场景"
+    ]
+  },
+  {
+    "slug": "supabase-ai",
+    "name": "Supabase AI",
+    "description": "开源 Firebase 替代品，AI SQL编辑器，自然语言写SQL查询和建表。",
+    "url": "https://supabase.com",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro $25/月",
+    "tags": [
+      "数据库",
+      "开源",
+      "BaaS"
+    ],
+    "stars": 80000,
+    "featured": true,
+    "pros": [
+      "开源",
+      "AI SQL",
+      "自托管可选"
+    ],
+    "cons": [
+      "高级功能需Pro"
+    ]
+  },
+  {
+    "slug": "neon",
+    "name": "Neon",
+    "description": "Serverless PostgreSQL，AI驱动的数据库分支和即时恢复。",
+    "url": "https://neon.tech",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro $19/月",
+    "tags": [
+      "数据库",
+      "Serverless",
+      "PostgreSQL"
+    ],
+    "stars": 15000,
+    "featured": false,
+    "pros": [
+      "数据库分支",
+      "即时恢复",
+      "Serverless"
+    ],
+    "cons": [
+      "仅PostgreSQL"
+    ]
+  },
+  {
+    "slug": "planetscale",
+    "name": "PlanetScale",
+    "description": "MySQL 兼容 Serverless 数据库，AI驱动的Schema变更建议。",
+    "url": "https://planetscale.com",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro $39/月",
+    "tags": [
+      "数据库",
+      "Serverless",
+      "MySQL"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "Schema分支",
+      "零停机变更"
+    ],
+    "cons": [
+      "免费额度低"
+    ]
+  },
+  {
+    "slug": "railway",
+    "name": "Railway",
+    "description": "全栈部署平台，AI辅助基础设施配置，一键部署数据库+后端+前端。",
+    "url": "https://railway.app",
+    "category": "dev-tools",
+    "pricing": "免费 $5额度 + Pro $20/月",
+    "tags": [
+      "部署",
+      "全栈",
+      "PaaS"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "一键部署",
+      "AI配置",
+      "模板丰富"
+    ],
+    "cons": [
+      "价格偏高"
+    ]
+  },
+  {
+    "slug": "render",
+    "name": "Render",
+    "description": "统一云平台，支持Web服务、数据库、Cron任务，AI驱动的自动扩缩容。",
+    "url": "https://render.com",
+    "category": "dev-tools",
+    "pricing": "免费 + 按量付费",
+    "tags": [
+      "部署",
+      "PaaS",
+      "全栈"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "统一平台",
+      "自动扩缩",
+      "免费额度"
+    ],
+    "cons": [
+      "冷启动慢"
+    ]
+  },
+  {
+    "slug": "lindy",
+    "name": "Lindy",
+    "description": "无代码AI Agent构建平台，用自然语言创建能操作任何网站的AI代理。",
+    "url": "https://lindy.ai",
+    "category": "agent-framework",
+    "pricing": "免费 + Pro $49/月",
+    "tags": [
+      "无代码",
+      "Agent",
+      "自动化"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "无代码",
+      "网站操作",
+      "模板丰富"
+    ],
+    "cons": [
+      "定制性受限"
+    ]
+  },
+  {
+    "slug": "taskade",
+    "name": "Taskade AI",
+    "description": "AI项目管理+知识库，内置AI Agent可自动执行项目任务。",
+    "url": "https://taskade.com",
+    "category": "agent-framework",
+    "pricing": "免费 + Pro $8/月",
+    "tags": [
+      "项目管理",
+      "Agent",
+      "知识库"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "项目管理+AI融合",
+      "价格低"
+    ],
+    "cons": [
+      "Agent能力偏基础"
+    ]
+  },
+  {
+    "slug": "crewai-studio",
+    "name": "CrewAI Studio",
+    "description": "CrewAI 可视化IDE，拖拽式设计多Agent协作流程，一键部署。",
+    "url": "https://crewai.com/studio",
+    "category": "agent-framework",
+    "pricing": "免费 + Enterprise",
+    "tags": [
+      "可视化",
+      "拖拽",
+      "部署"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "可视化编排",
+      "一键部署"
+    ],
+    "cons": [
+      "依赖CrewAI生态"
+    ]
+  },
+  {
+    "slug": "pydantic-ai",
+    "name": "Pydantic AI",
+    "description": "Pydantic 官方AI Agent框架，类型安全的Agent开发，Python原生。",
+    "url": "https://ai.pydantic.dev",
+    "category": "agent-framework",
+    "pricing": "免费开源",
+    "tags": [
+      "框架",
+      "类型安全",
+      "Python"
+    ],
+    "stars": 8000,
+    "featured": false,
+    "pros": [
+      "类型安全",
+      "Pydantic生态",
+      "简洁"
+    ],
+    "cons": [
+      "较新，生态待完善"
+    ]
+  },
+  {
+    "slug": "mcp-github",
+    "name": "GitHub MCP Server",
+    "description": "官方 MCP 服务器，AI直接管理GitHub仓库、PR、Issue。",
+    "url": "https://github.com/github/github-mcp-server",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "GitHub",
+      "DevOps"
+    ],
+    "stars": 5000,
+    "featured": false,
+    "pros": [
+      "官方维护",
+      "GitHub全操作"
+    ],
+    "cons": [
+      "需GitHub Token"
+    ]
+  },
+  {
+    "slug": "mcp-slack",
+    "name": "Slack MCP Server",
+    "description": "Slack MCP服务器，AI Agent可读取和发送Slack消息，团队协作自动化。",
+    "url": "https://github.com/slack/mcp-server",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "Slack",
+      "协作"
+    ],
+    "stars": 2000,
+    "featured": false,
+    "pros": [
+      "团队协作",
+      "消息自动化"
+    ],
+    "cons": [
+      "需Slack权限"
+    ]
+  },
+  {
+    "slug": "mcp-filesystem",
+    "name": "Filesystem MCP Server",
+    "description": "官方文件系统MCP服务器，AI Agent安全读写本地文件。",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "文件系统",
+      "本地"
+    ],
+    "stars": 5000,
+    "featured": false,
+    "pros": [
+      "官方维护",
+      "安全隔离"
+    ],
+    "cons": [
+      "仅限授权目录"
+    ]
+  },
+  {
+    "slug": "mcp-postgres",
+    "name": "PostgreSQL MCP Server",
+    "description": "PostgreSQL MCP服务器，AI直接执行SQL查询，支持只读模式。",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "数据库",
+      "SQL"
+    ],
+    "stars": 4000,
+    "featured": false,
+    "pros": [
+      "直接查询数据库",
+      "只读模式"
+    ],
+    "cons": [
+      "需数据库权限"
+    ]
+  },
+  {
+    "slug": "swe-agent",
+    "name": "SWE-Agent",
+    "description": "开源AI软件工程师，在SWE-bench基准测试中表现顶尖，自动修复GitHub Issue。",
+    "url": "https://github.com/princeton-nlp/SWE-agent",
+    "category": "code-review",
+    "pricing": "免费开源",
+    "tags": [
+      "自动修复",
+      "开源",
+      "学术"
+    ],
+    "stars": 15000,
+    "featured": false,
+    "pros": [
+      "SWE-bench顶尖",
+      "开源",
+      "学术验证"
+    ],
+    "cons": [
+      "配置复杂"
+    ]
+  },
+  {
+    "slug": "linearb",
+    "name": "LinearB",
+    "description": "工程指标+代码审查平台，AI分析团队效率并自动优化开发流程。",
+    "url": "https://linearb.io",
+    "category": "code-review",
+    "pricing": "免费（8人）+ $35/贡献者/月",
+    "tags": [
+      "工程指标",
+      "团队效率",
+      "自动化"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "工程指标+审查",
+      "团队分析"
+    ],
+    "cons": [
+      "小型团队溢价"
+    ]
+  },
+  {
+    "slug": "gitlab-duo",
+    "name": "GitLab Duo",
+    "description": "GitLab内置AI助手，覆盖代码补全、审查、安全扫描、CI/CD优化。",
+    "url": "https://gitlab.com",
+    "category": "dev-tools",
+    "pricing": "免费（5人）+ $29/人/月",
+    "tags": [
+      "DevOps",
+      "全流程",
+      "安全"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "DevOps全流程",
+      "安全扫描"
+    ],
+    "cons": [
+      "GitLab生态绑定"
+    ]
+  },
+  {
+    "slug": "turbopack",
+    "name": "Turbopack",
+    "description": "Vercel 推出的 Rust 构建工具，AI优化的增量编译，Next.js默认打包器。",
+    "url": "https://turbo.build/pack",
+    "category": "dev-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "构建",
+      "Rust",
+      "Next.js"
+    ],
+    "stars": 25000,
+    "featured": false,
+    "pros": [
+      "极快构建",
+      "Next.js原生"
+    ],
+    "cons": [
+      "仅Web前端"
+    ]
+  },
+  {
+    "slug": "biome",
+    "name": "Biome",
+    "description": "Rust 构建的统一工具链（格式化+lint），AI辅助代码风格自动修复。",
+    "url": "https://biomejs.dev",
+    "category": "dev-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "格式化",
+      "Lint",
+      "Rust"
+    ],
+    "stars": 18000,
+    "featured": false,
+    "pros": [
+      "极快",
+      "统一工具链"
+    ],
+    "cons": [
+      "不支持所有语言"
+    ]
+  },
+  {
+    "slug": "aider",
+    "name": "Aider",
+    "description": "终端 AI 结对编程工具，Git 原生集成，自动提交代码变更，支持全模型。",
+    "url": "https://aider.chat",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "CLI",
+      "Git",
+      "开源"
+    ],
+    "stars": 41000,
+    "featured": true,
+    "pros": [
+      "Git原生",
+      "自动提交",
+      "多模型"
+    ],
+    "cons": [
+      "仅终端"
+    ]
+  },
+  {
+    "slug": "openhands",
+    "name": "OpenHands",
+    "description": "全自主AI开发者Agent，68k GitHub Stars，MIT协议，支持全栈开发。",
+    "url": "https://github.com/All-Hands-AI/OpenHands",
+    "category": "agent-framework",
+    "pricing": "免费开源",
+    "tags": [
+      "自主Agent",
+      "全栈",
+      "开源"
+    ],
+    "stars": 68000,
+    "featured": true,
+    "pros": [
+      "最完整自主Agent",
+      "MIT协议",
+      "社区最大"
+    ],
+    "cons": [
+      "资源消耗大"
+    ]
+  },
+  {
+    "slug": "roo-code",
+    "name": "Roo Code",
+    "description": "VS Code AI编程Agent，结构化模式切换（编码/架构/审查），22k Stars。",
+    "url": "https://github.com/RooVetGit/Roo-Code",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "IDE",
+      "Agent",
+      "VS Code"
+    ],
+    "stars": 22000,
+    "featured": false,
+    "pros": [
+      "结构化模式",
+      "开源",
+      "灵活"
+    ],
+    "cons": [
+      "需要自己配模型"
+    ]
+  },
+  {
+    "slug": "tabby",
+    "name": "Tabby",
+    "description": "自托管AI代码补全，完全本地化运行，无需云端，33k Stars。",
+    "url": "https://tabby.tabbyml.com",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "自托管",
+      "补全",
+      "隐私"
+    ],
+    "stars": 33000,
+    "featured": false,
+    "pros": [
+      "完全自托管",
+      "隐私优先",
+      "开源"
+    ],
+    "cons": [
+      "需要GPU资源"
+    ]
+  },
+  {
+    "slug": "continue",
+    "name": "Continue",
+    "description": "开源IDE AI助手，支持VS Code和JetBrains，可接入任何模型，31k Stars。",
+    "url": "https://continue.dev",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "IDE",
+      "开源",
+      "多模型"
+    ],
+    "stars": 31000,
+    "featured": true,
+    "pros": [
+      "多IDE",
+      "多模型",
+      "开源"
+    ],
+    "cons": [
+      "配置略复杂"
+    ]
+  },
+  {
+    "slug": "goose",
+    "name": "Goose",
+    "description": "通用任务执行Agent，不仅限于代码，可操作文件、浏览器、终端，32k Stars。",
+    "url": "https://block.github.io/goose",
+    "category": "agent-framework",
+    "pricing": "免费开源",
+    "tags": [
+      "通用Agent",
+      "任务执行",
+      "开源"
+    ],
+    "stars": 32000,
+    "featured": false,
+    "pros": [
+      "超越代码",
+      "Block出品",
+      "开源"
+    ],
+    "cons": [
+      "非专注编程"
+    ]
+  },
+  {
+    "slug": "kilo-code",
+    "name": "Kilo Code",
+    "description": "JetBrains IDE 原生AI编程Agent，支持IntelliJ、PyCharm等。",
+    "url": "https://kilocode.ai",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "JetBrains",
+      "Agent",
+      "开源"
+    ],
+    "stars": 8000,
+    "featured": false,
+    "pros": [
+      "JetBrains原生",
+      "Kotlin/Java优化"
+    ],
+    "cons": [
+      "仅JetBrains生态"
+    ]
+  },
+  {
+    "slug": "frontman",
+    "name": "Frontman",
+    "description": "浏览器内AI编程工具，框架深度集成(React/Next.js/Vue)，支持BYOK。",
+    "url": "https://frontman.sh",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro",
+    "tags": [
+      "浏览器",
+      "前端",
+      "可视化"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "浏览器开发",
+      "框架集成"
+    ],
+    "cons": [
+      "仅前端"
+    ]
+  },
+  {
+    "slug": "stagewise",
+    "name": "Stagewise",
+    "description": "零安装浏览器AI编程代理，IDE桥接模式，一键在云端开发。",
+    "url": "https://stagewise.dev",
+    "category": "dev-tools",
+    "pricing": "免费 + Pro",
+    "tags": [
+      "浏览器",
+      "零安装",
+      "云端"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "零安装",
+      "即时启动"
+    ],
+    "cons": [
+      "云端依赖"
+    ]
+  },
+  {
+    "slug": "bolt-diy",
+    "name": "Bolt.diy",
+    "description": "Bolt.new 开源社区版，自由部署AI全栈应用生成器。",
+    "url": "https://github.com/stackblitz-labs/bolt.diy",
+    "category": "dev-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "开源",
+      "全栈",
+      "自部署"
+    ],
+    "stars": 12000,
+    "featured": false,
+    "pros": [
+      "开源",
+      "自部署",
+      "社区驱动"
+    ],
+    "cons": [
+      "不如商业化版稳定"
+    ]
+  },
+  {
+    "slug": "pipertest",
+    "name": "PiperTest",
+    "description": "MCP原生AI测试工具，AI读取AX Tree生成结构化测试，完全本地运行。",
+    "url": "https://modelpiper.com/pipertest",
+    "category": "testing-qa",
+    "pricing": "免费 + Pro",
+    "tags": [
+      "MCP",
+      "测试",
+      "本地"
+    ],
+    "stars": 0,
+    "featured": true,
+    "pros": [
+      "MCP原生",
+      "完全本地",
+      "自愈"
+    ],
+    "cons": [
+      "较新，生态小"
+    ]
+  },
+  {
+    "slug": "playwright-test-agent",
+    "name": "Playwright Test Agents",
+    "description": "Playwright v1.56+ 内置LLM驱动的测试Agent，AI自动探索和测试页面。",
+    "url": "https://playwright.dev",
+    "category": "testing-qa",
+    "pricing": "免费开源",
+    "tags": [
+      "测试",
+      "Agent",
+      "开源"
+    ],
+    "stars": 72000,
+    "featured": true,
+    "pros": [
+      "Playwright生态",
+      "LLM驱动",
+      "开源"
+    ],
+    "cons": [
+      "探索测试不可预测",
+      "Token消耗大"
+    ]
+  },
+  {
+    "slug": "cypress-ai",
+    "name": "Cypress AI (cy.prompt)",
+    "description": "Cypress 内置AI测试命令，自然语言写测试，适合快速原型验证。",
+    "url": "https://cypress.io",
+    "category": "testing-qa",
+    "pricing": "免费 + Cloud $75/月",
+    "tags": [
+      "测试",
+      "自然语言",
+      "前端"
+    ],
+    "stars": 48000,
+    "featured": false,
+    "pros": [
+      "自然语言",
+      "快速原型",
+      "前端专注"
+    ],
+    "cons": [
+      "云端依赖",
+      "限速"
+    ]
+  },
+  {
+    "slug": "keploy",
+    "name": "Keploy",
+    "description": "开源API测试工具，AI自动生成测试用例和Mock数据，零代码。",
+    "url": "https://keploy.io",
+    "category": "testing-qa",
+    "pricing": "免费开源 + Enterprise",
+    "tags": [
+      "API测试",
+      "Mock",
+      "开源"
+    ],
+    "stars": 7000,
+    "featured": false,
+    "pros": [
+      "零代码",
+      "自动Mock",
+      "开源"
+    ],
+    "cons": [
+      "仅API测试"
+    ]
+  },
+  {
+    "slug": "mcp-sentry",
+    "name": "Sentry MCP Server",
+    "description": "Sentry MCP服务器，AI直接查询和分析错误日志、性能数据。",
+    "url": "https://sentry.io",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "错误监控",
+      "DevOps"
+    ],
+    "stars": 2000,
+    "featured": false,
+    "pros": [
+      "错误监控集成",
+      "性能数据"
+    ],
+    "cons": [
+      "需Sentry账号"
+    ]
+  },
+  {
+    "slug": "mcp-aws",
+    "name": "AWS MCP Server",
+    "description": "AWS MCP服务器，AI操作S3/DynamoDB/Lambda等云资源。",
+    "url": "https://aws.amazon.com",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "AWS",
+      "云"
+    ],
+    "stars": 3000,
+    "featured": false,
+    "pros": [
+      "AWS全服务",
+      "权限可控"
+    ],
+    "cons": [
+      "需AWS账号",
+      "配置复杂"
+    ]
+  },
+  {
+    "slug": "mcp-cloudflare",
+    "name": "Cloudflare MCP Server",
+    "description": "Cloudflare MCP服务器，AI管理Worker/R2/D1/KV等边缘服务。",
+    "url": "https://cloudflare.com",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "边缘",
+      "Serverless"
+    ],
+    "stars": 2000,
+    "featured": false,
+    "pros": [
+      "边缘部署",
+      "Serverless"
+    ],
+    "cons": [
+      "仅Cloudflare生态"
+    ]
+  },
+  {
+    "slug": "mcp-linear",
+    "name": "Linear MCP Server",
+    "description": "Linear MCP服务器，AI管理Issue、项目、Sprint，开发流程自动化。",
+    "url": "https://linear.app",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "项目管理",
+      "敏捷"
+    ],
+    "stars": 1500,
+    "featured": false,
+    "pros": [
+      "项目管理AI化",
+      "Linear集成"
+    ],
+    "cons": [
+      "需Linear账号"
+    ]
+  },
+  {
+    "slug": "mcp-notion",
+    "name": "Notion MCP Server",
+    "description": "Notion MCP服务器，AI读写Notion数据库、页面和知识库。",
+    "url": "https://notion.so",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "知识库",
+      "文档"
+    ],
+    "stars": 2500,
+    "featured": false,
+    "pros": [
+      "知识库管理",
+      "文档自动化"
+    ],
+    "cons": [
+      "需Notion API"
+    ]
+  },
+  {
+    "slug": "mcp-memory",
+    "name": "Memory MCP Server",
+    "description": "官方MCP记忆服务器，AI Agent跨会话持久化记忆和知识图谱。",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "category": "mcp-tools",
+    "pricing": "免费开源",
+    "tags": [
+      "MCP",
+      "记忆",
+      "知识图谱"
+    ],
+    "stars": 5000,
+    "featured": false,
+    "pros": [
+      "跨会话记忆",
+      "官方维护"
+    ],
+    "cons": [
+      "存储管理需关注"
+    ]
+  }
+]
