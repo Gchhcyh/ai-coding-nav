@@ -2,8 +2,34 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Coding Nav - AI编程工具全链路导航",
-  description: "覆盖AI编码、Agent开发、MCP工具、代码审查、DevOps全链路的AI编程工具精选导航。帮你找到最适合的AI开发工具。",
+  title: "AI Coding Nav - AI编程工具全链路导航（2026）",
+  description: "2026年最新AI编程工具导航：Cursor、Copilot、Claude Code、LangGraph、MCP工具、代码审查、测试工具、DevOps工具全收录。帮你快速找到最适合的AI开发工具。",
+  keywords: "AI编程工具,AI代码编辑器,AI Agent框架,MCP工具,AI代码审查,AI测试工具,2026 AI工具,开发者工具导航",
+  authors: [{ name: "AI Coding Nav" }],
+  openGraph: {
+    title: "AI Coding Nav - AI编程工具全链路导航（2026）",
+    description: "2026年最新AI编程工具导航：Cursor、Copilot、Claude Code、LangGraph、MCP工具、代码审查、测试工具、DevOps工具全收录。",
+    type: "website",
+    url: "https://ai-coding-nav.pages.dev",
+    siteName: "AI Coding Nav",
+    locale: "zh_CN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Coding Nav - AI编程工具全链路导航（2026）",
+    description: "2026年最新AI编程工具导航：Cursor、Copilot、Claude Code、LangGraph、MCP工具、代码审查、测试工具、DevOps工具全收录。",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
