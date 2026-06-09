@@ -24,10 +24,23 @@ function HomePage() {
   const [compareMode, setCompareMode] = useState(false);
   const [comparedSlugs, setComparedSlugs] = useState<string[]>([]);
 
+  const [sortBy, setSortBy] = useState<'default' | 'stars' | 'name-asc' | 'name-desc'>('default');
+
   const filteredTools = useMemo(() => {
-    if (!activeCategory) return searchResults;
-    return searchResults.filter((t) => t.category === activeCategory);
-  }, [activeCategory, searchResults]);
+    let result = activeCategory
+      ? searchResults.filter((t) => t.category === activeCategory)
+      : searchResults;
+    switch (sortBy) {
+      case 'stars':
+        return [...result].sort((a, b) => (b.stars || 0) - (a.stars || 0));
+      case 'name-asc':
+        return [...result].sort((a, b) => a.name.localeCompare(b.name));
+      case 'name-desc':
+        return [...result].sort((a, b) => b.name.localeCompare(a.name));
+      default:
+        return result;
+    }
+  }, [activeCategory, searchResults, sortBy]);
 
   const featuredTools = allTools.filter((t) => t.featured);
   const activeCategoryData = categories.find((c) => c.id === activeCategory);
@@ -105,8 +118,23 @@ function HomePage() {
         </section>
 
         {/* Category Filter */}
-        <section className="pb-8 px-4">
-          <CategoryFilter active={activeCategory} onChange={setActiveCategory} />
+        <section className="pb-4 px-4">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <CategoryFilter active={activeCategory} onChange={setActiveCategory} />
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-gray-500">排序:</span>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
+                className="bg-gray-800 border border-gray-700 rounded-lg px-3 py-1.5 text-gray-300 text-sm focus:outline-none focus:border-primary-500"
+              >
+                <option value="default">默认</option>
+                <option value="stars">Star 数</option>
+                <option value="name-asc">名称 A-Z</option>
+                <option value="name-desc">名称 Z-A</option>
+              </select>
+            </div>
+          </div>
         </section>
 
         {/* Tools Grid */}

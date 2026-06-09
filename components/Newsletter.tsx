@@ -1,17 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setSubmitted(true);
+    if (!email) return;
+
+    setStatus("loading");
+    setMessage("");
+
+    const url = "https://dev.us11.list-manage.com/subscribe/post-json";
+    const params = new URLSearchParams({
+      u: "288932316a3d3fd2669581bbe",
+      id: "993f79b613",
+      f_id: "00d50de1f0",
+      EMAIL: email,
+      b_288932316a3d3fd2669581bbe_993f79b613: "",
+      c: "JSONP_CALLBACK",
+    });
+
+    try {
+      const response = await fetch(`${url}?${params.toString()}`, { mode: "no-cors" });
+      // Mailchimp JSONP returns success even with no-cors; we infer from no network error
+      setStatus("success");
+      setMessage("确认邮件已发送，请检查收件箱");
+      setEmail("");
+    } catch {
+      setStatus("error");
+      setMessage("网络错误，请稍后重试");
     }
-  };
+  }, [email]);
 
   return (
     <section className="py-16 px-4">
@@ -30,7 +53,7 @@ export default function Newsletter() {
           每周精选 5 个 AI 编程工具，附带实战测评和使用技巧，助你保持技术前沿。
         </p>
 
-        {submitted ? (
+        {status === "success" ? (
           <div className="text-center py-4">
             <div className="inline-flex items-center gap-2 text-green-400 mb-2">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -38,7 +61,7 @@ export default function Newsletter() {
               </svg>
               <span className="font-semibold">订阅成功</span>
             </div>
-            <p className="text-sm text-gray-500">下周你会收到第一封邮件</p>
+            <p className="text-sm text-gray-400">{message}</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -48,17 +71,22 @@ export default function Newsletter() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
               required
-              className="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors"
+              disabled={status === "loading"}
+              className="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-primary-500 transition-colors disabled:opacity-50"
             />
             <button
               type="submit"
-              className="px-6 py-3 rounded-lg bg-primary-600 hover:bg-primary-500 text-white text-sm font-medium transition-colors shrink-0"
+              disabled={status === "loading"}
+              className="px-6 py-3 rounded-lg bg-primary-600 hover:bg-primary-500 text-white text-sm font-medium transition-colors shrink-0 disabled:opacity-50"
             >
-              订阅
+              {status === "loading" ? "提交中..." : "订阅"}
             </button>
           </form>
         )}
 
+        {status === "error" && (
+          <p className="text-xs text-red-400 mt-3">{message}</p>
+        )}
         <p className="text-xs text-gray-600 mt-4">
           不发送垃圾邮件，随时一键退订
         </p>

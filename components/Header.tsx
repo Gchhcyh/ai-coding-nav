@@ -30,8 +30,17 @@ export default function Header() {
             <Link href="/?category=mcp-tools" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
               MCP工具
             </Link>
+            <Link href="/?category=code-review" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              代码审查
+            </Link>
+            <Link href="/?category=testing-qa" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              AI测试
+            </Link>
+            <Link href="/?category=dev-tools" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              开发工具
+            </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/Gchhcyh/ai-coding-nav/issues/new"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-sm font-medium transition-colors"
@@ -63,7 +72,10 @@ export default function Header() {
             <Link href="/?category=ai-ide" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>AI IDE</Link>
             <Link href="/?category=agent-framework" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>Agent框架</Link>
             <Link href="/?category=mcp-tools" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>MCP工具</Link>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 rounded-lg text-primary-400 hover:bg-gray-800 text-sm font-medium">提交工具 →</a>
+            <Link href="/?category=code-review" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>代码审查</Link>
+            <Link href="/?category=testing-qa" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>AI测试</Link>
+            <Link href="/?category=dev-tools" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>开发工具</Link>
+            <a href="https://github.com/Gchhcyh/ai-coding-nav/issues/new" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 rounded-lg text-primary-400 hover:bg-gray-800 text-sm font-medium">提交工具 →</a>
           </nav>
         )}
       </div>
