@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config *)",
+      "Bash(node -e \"const t=require\\('./data/tools.json'\\); console.log\\('Total tools:', t.length\\); const cats={}; t.forEach\\(x=>{cats[x.category]=\\(cats[x.category]||0\\)+1}\\); console.log\\('By category:', cats\\); console.log\\('Featured:', t.filter\\(x=>x.featured\\).length\\); console.log\\('Slugs:', t.map\\(x=>x.slug\\).length\\)\")",
+      "Bash(node -e \"const t=require\\('./data/tools.json'\\); const cats={}; t.forEach\\(x=>{cats[x.category]=\\(cats[x.category]||0\\)+1}\\); console.log\\('Total:', t.length\\); console.log\\('By category:', JSON.stringify\\(cats, null, 2\\)\\); console.log\\('Featured:', t.filter\\(x=>x.featured\\).length\\); const slugs=t.map\\(x=>x.slug\\); const dup=slugs.filter\\(\\(s,i\\)=>slugs.indexOf\\(s\\)!==i\\); console.log\\('Duplicate slugs:', dup\\)\")"
+    ]
+  }
+}

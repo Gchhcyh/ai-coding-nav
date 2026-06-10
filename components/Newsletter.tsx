@@ -2,6 +2,12 @@
 
 import { useState, useCallback } from "react";
 
+declare global {
+  interface Window {
+    [key: string]: ((data: { result: string; msg: string }) => void) | undefined;
+  }
+}
+
 export default function Newsletter() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -14,26 +20,46 @@ export default function Newsletter() {
     setStatus("loading");
     setMessage("");
 
-    const url = "https://dev.us11.list-manage.com/subscribe/post-json";
-    const params = new URLSearchParams({
-      u: "288932316a3d3fd2669581bbe",
-      id: "993f79b613",
-      f_id: "00d50de1f0",
-      EMAIL: email,
-      b_288932316a3d3fd2669581bbe_993f79b613: "",
-      c: "JSONP_CALLBACK",
-    });
+    const callbackName = `mailchimp_cb_${Date.now()}`;
+    const url = new URL("https://dev.us11.list-manage.com/subscribe/post-json");
+    url.searchParams.set("u", "288932316a3d3fd2669581bbe");
+    url.searchParams.set("id", "993f79b613");
+    url.searchParams.set("EMAIL", email);
+    url.searchParams.set("c", callbackName);
 
-    try {
-      const response = await fetch(`${url}?${params.toString()}`, { mode: "no-cors" });
-      // Mailchimp JSONP returns success even with no-cors; we infer from no network error
-      setStatus("success");
-      setMessage("确认邮件已发送，请检查收件箱");
-      setEmail("");
-    } catch {
+    const timeout = setTimeout(() => {
+      if (window[callbackName]) {
+        delete window[callbackName];
+        document.head.removeChild(script);
+        setStatus("error");
+        setMessage("请求超时，请稍后重试");
+      }
+    }, 10000);
+
+    window[callbackName] = (data: { result: string; msg: string }) => {
+      clearTimeout(timeout);
+      delete window[callbackName];
+      document.head.removeChild(script);
+      if (data.result === "success") {
+        setStatus("success");
+        setMessage(data.msg || "确认邮件已发送，请检查收件箱");
+        setEmail("");
+      } else {
+        setStatus("error");
+        setMessage(data.msg || "订阅失败，请检查邮箱地址");
+      }
+    };
+
+    const script = document.createElement("script");
+    script.src = url.toString();
+    script.onerror = () => {
+      clearTimeout(timeout);
+      delete window[callbackName];
+      if (script.parentNode) document.head.removeChild(script);
       setStatus("error");
       setMessage("网络错误，请稍后重试");
-    }
+    };
+    document.head.appendChild(script);
   }, [email]);
 
   return (

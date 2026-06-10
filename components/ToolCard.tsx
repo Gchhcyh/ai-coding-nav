@@ -2,6 +2,12 @@
 
 import Link from "next/link";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 interface ToolCardProps {
   tool: {
     slug: string;
@@ -118,6 +124,14 @@ export default function ToolCard({ tool, compareMode, isCompared, onToggleCompar
       href={tool.url}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => {
+        window.gtag?.("event", "outbound_click", {
+          event_category: "engagement",
+          event_label: tool.name,
+          tool_slug: tool.slug,
+          tool_category: tool.category,
+        });
+      }}
       className={`block p-5 rounded-xl bg-gray-800/40 border border-gray-700/50 card-hover ${
         tool.featured ? "ring-1 ring-primary-500/30" : ""
       }`}

@@ -7,11 +7,11 @@ export default function Footer() {
             AI Coding Nav — AI编程工具全链路导航。每周更新，帮你找到最适合的AI开发工具。
           </p>
           <div className="flex items-center gap-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">
+            <a href="https://github.com/Gchhcyh/ai-coding-nav/issues/new" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">
               提交工具
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">
-              Twitter
+            <a href="https://github.com/Gchhcyh/ai-coding-nav" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">
+              GitHub
             </a>
             <span className="text-xs text-gray-600">MVP v0.1</span>
           </div>

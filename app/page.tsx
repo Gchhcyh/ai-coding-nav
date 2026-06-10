@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState, useMemo, Suspense, useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import SearchBar from "@/components/SearchBar";
 import CategoryFilter from "@/components/CategoryFilter";
@@ -17,14 +17,32 @@ type Tool = (typeof allTools)[number];
 
 function HomePage() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const initialCategory = searchParams.get("category") || "";
 
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [searchResults, setSearchResults] = useState(allTools);
+
+  // Keep activeCategory in sync with URL searchParams
+  useEffect(() => {
+    setActiveCategory(initialCategory);
+  }, [initialCategory]);
   const [compareMode, setCompareMode] = useState(false);
   const [comparedSlugs, setComparedSlugs] = useState<string[]>([]);
 
   const [sortBy, setSortBy] = useState<'default' | 'stars' | 'name-asc' | 'name-desc'>('default');
+
+  const handleCategoryChange = (category: string) => {
+    setActiveCategory(category);
+    const params = new URLSearchParams(searchParams.toString());
+    if (category) {
+      params.set("category", category);
+    } else {
+      params.delete("category");
+    }
+    const qs = params.toString();
+    router.push(qs ? `/?${qs}` : "/", { scroll: false });
+  };
 
   const filteredTools = useMemo(() => {
     let result = activeCategory
@@ -120,7 +138,7 @@ function HomePage() {
         {/* Category Filter */}
         <section className="pb-4 px-4">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-            <CategoryFilter active={activeCategory} onChange={setActiveCategory} />
+            <CategoryFilter active={activeCategory} onChange={handleCategoryChange} />
             <div className="flex items-center gap-2 text-sm">
               <span className="text-gray-500">排序:</span>
               <select
@@ -210,7 +228,7 @@ function HomePage() {
               <h3 className="text-lg font-semibold text-white mb-2">有遗漏的好工具？</h3>
               <p className="text-sm text-gray-400 mb-4">在 GitHub 提交 Issue，我们会在 24 小时内收录</p>
               <a
-                href="https://github.com"
+                href="https://github.com/Gchhcyh/ai-coding-nav/issues/new"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-600 hover:bg-primary-500 text-white text-sm font-medium transition-colors"

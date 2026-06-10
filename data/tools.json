@@ -1770,5 +1770,149 @@
     "cons": [
       "存储管理需关注"
     ]
+  },
+  {
+    "slug": "applitools",
+    "name": "Applitools",
+    "description": "AI 视觉回归测试平台，截图对比自动检测 UI 变化，跨浏览器/设备验证视觉一致性。",
+    "url": "https://applitools.com",
+    "category": "testing-qa",
+    "pricing": "免费版 + 团队 $99/月起",
+    "tags": [
+      "视觉测试",
+      "回归测试",
+      "AI"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "视觉差异精准检测",
+      "跨浏览器支持",
+      "CI/CD 集成"
+    ],
+    "cons": [
+      "专业版价格较高",
+      "学习曲线中等"
+    ]
+  },
+  {
+    "slug": "testsigma",
+    "name": "TestSigma",
+    "description": "无代码 AI 自动化测试平台，用自然语言编写测试用例，支持 Web/移动/API。",
+    "url": "https://testsigma.com",
+    "category": "testing-qa",
+    "pricing": "免费开源版 + 云 $99/月起",
+    "tags": [
+      "无代码",
+      "自动化测试",
+      "AI"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "自然语言编写测试",
+      "无需编程基础",
+      "多端支持"
+    ],
+    "cons": [
+      "复杂场景需脚本辅助",
+      "社区版功能受限"
+    ]
+  },
+  {
+    "slug": "mabl",
+    "name": "Mabl",
+    "description": "低代码智能测试平台，AI 自动修复测试脚本，持续监控 Web 应用质量。",
+    "url": "https://mabl.com",
+    "category": "testing-qa",
+    "pricing": "企业版定制报价",
+    "tags": [
+      "低代码",
+      "自愈测试",
+      "Web"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "测试脚本自动修复",
+      "持续质量监控",
+      "团队协作"
+    ],
+    "cons": [
+      "仅企业定价",
+      "开源替代少"
+    ]
+  },
+  {
+    "slug": "testim",
+    "name": "Testim",
+    "description": "AI 驱动端到端测试平台，智能定位器自动适配 UI 变化，减少测试维护成本。",
+    "url": "https://testim.io",
+    "category": "testing-qa",
+    "pricing": "免费版 + 团队 $450/月起",
+    "tags": [
+      "E2E测试",
+      "AI定位器",
+      "自动化"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "自愈定位器",
+      "低维护成本",
+      "快速创建测试"
+    ],
+    "cons": [
+      "高级功能较贵",
+      "定制性有限"
+    ]
+  },
+  {
+    "slug": "functionize",
+    "name": "Functionize",
+    "description": "NLP 驱动的测试自动化平台，用自然语言描述测试场景，云端大规模并行执行。",
+    "url": "https://functionize.com",
+    "category": "testing-qa",
+    "pricing": "企业版定制报价",
+    "tags": [
+      "NLP",
+      "云端执行",
+      "并行测试"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "NLP 生成测试用例",
+      "大规模并行执行",
+      "智能故障分析"
+    ],
+    "cons": [
+      "企业级定价",
+      "仅限 Web 测试"
+    ]
+  },
+  {
+    "slug": "diffblue-cover",
+    "name": "Diffblue Cover",
+    "description": "AI 自动生成 Java 单元测试，分析代码逻辑自动编写覆盖全面的测试用例。",
+    "url": "https://diffblue.com",
+    "category": "testing-qa",
+    "pricing": "免费社区版 + 企业版定制",
+    "tags": [
+      "单元测试",
+      "Java",
+      "AI"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "自动生成高质量测试",
+      "快速提升覆盖率",
+      "IDE 集成"
+    ],
+    "cons": [
+      "仅支持 Java",
+      "企业版价格不透明"
+    ]
   }
 ]

@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   description: "2026年最新AI编程工具导航：Cursor、Copilot、Claude Code、LangGraph、MCP工具、代码审查、测试工具、DevOps工具全收录。帮你快速找到最适合的AI开发工具。",
   keywords: "AI编程工具,AI代码编辑器,AI Agent框架,MCP工具,AI代码审查,AI测试工具,2026 AI工具,开发者工具导航",
   authors: [{ name: "AI Coding Nav" }],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.png",
+  },
   openGraph: {
     title: "AI Coding Nav - AI编程工具全链路导航（2026）",
     description: "2026年最新AI编程工具导航：Cursor、Copilot、Claude Code、LangGraph、MCP工具、代码审查、测试工具、DevOps工具全收录。",
@@ -13,11 +17,20 @@ export const metadata: Metadata = {
     url: "https://ai-coding-nav.pages.dev",
     siteName: "AI Coding Nav",
     locale: "zh_CN",
+    images: [
+      {
+        url: "https://ai-coding-nav.pages.dev/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AI Coding Nav - AI编程工具全链路导航",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Coding Nav - AI编程工具全链路导航（2026）",
     description: "2026年最新AI编程工具导航：Cursor、Copilot、Claude Code、LangGraph、MCP工具、代码审查、测试工具、DevOps工具全收录。",
+    images: ["https://ai-coding-nav.pages.dev/og-image.png"],
   },
   robots: {
     index: true,

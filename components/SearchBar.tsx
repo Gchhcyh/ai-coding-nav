@@ -1,7 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Fuse from "fuse.js";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 interface SearchBarProps {
   tools: any[];
@@ -10,6 +16,7 @@ interface SearchBarProps {
 
 export default function SearchBar({ tools, onResults }: SearchBarProps) {
   const [query, setQuery] = useState("");
+  const lastTrackedQuery = useRef("");
 
   const fuse = new Fuse(tools, {
     keys: ["name", "description", "tags", "category"],
@@ -19,10 +26,23 @@ export default function SearchBar({ tools, onResults }: SearchBarProps) {
   useEffect(() => {
     if (!query.trim()) {
       onResults(tools);
+      lastTrackedQuery.current = "";
       return;
     }
     const results = fuse.search(query).map((r) => r.item);
     onResults(results);
+    // Track search after 500ms debounce
+    const timer = setTimeout(() => {
+      if (query.trim() && query !== lastTrackedQuery.current) {
+        window.gtag?.("event", "search", {
+          event_category: "engagement",
+          search_term: query.trim(),
+          result_count: results.length,
+        });
+        lastTrackedQuery.current = query;
+      }
+    }, 500);
+    return () => clearTimeout(timer);
   }, [query]);
 
   return (
