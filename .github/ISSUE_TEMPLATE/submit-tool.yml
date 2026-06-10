@@ -1,0 +1,61 @@
+name: 提交工具
+description: 推荐一个 AI 编程工具加入导航站
+title: "[工具提交] "
+labels: ["tool-submission"]
+body:
+  - type: input
+    id: tool_name
+    attributes:
+      label: 工具名称
+      placeholder: "例如: Cursor"
+    validations:
+      required: true
+  - type: input
+    id: tool_url
+    attributes:
+      label: 官方网站
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 所属分类
+      options:
+        - AI IDE / 编辑器
+        - Agent 框架
+        - MCP 工具
+        - 代码审查 / 质量
+        - AI 测试
+        - 开发工具 / 辅助
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 一句话介绍（60 字以内）
+      description: 用一句话说清楚这个工具做什么、为什么值得收录
+      placeholder: "AI-first 代码编辑器，支持整项目上下文理解和多文件编辑"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 推荐理由
+      description: 这个工具解决了什么问题？和同类工具相比有什么独特优势？
+    validations:
+      required: true
+  - type: input
+    id: pricing
+    attributes:
+      label: 价格
+      placeholder: "例如: 免费 + Pro $20/月"
+    validations:
+      required: true
+  - type: input
+    id: github
+    attributes:
+      label: GitHub 仓库（如有）
+      placeholder: "https://github.com/..."
+    validations:
+      required: false
