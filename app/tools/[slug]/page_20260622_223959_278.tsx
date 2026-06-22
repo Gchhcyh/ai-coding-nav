@@ -1,3 +1,4 @@
+"use client";
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -6,10 +7,6 @@ import Footer from "@/components/Footer";
 import ToolDetailList from "@/components/ToolDetailList";
 import allTools from "@/data/tools.json";
 import { categoryMap } from "@/lib/tools";
-
-export function generateStaticParams() {
-  return allTools.map((t: any) => ({ slug: t.slug }));
-}
 
 const categoryColors: Record<string, string> = {
   "ai-ide": "bg-blue-500/10 text-blue-400 border-blue-500/20",
@@ -58,6 +55,7 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
           </Link>
 
           <div className="bg-gray-800/30 border border-gray-700/50 rounded-2xl p-6 sm:p-8">
+            {/* Header */}
             <div className="flex flex-wrap items-start justify-between gap-3 mb-2">
               <div className="flex flex-wrap items-center gap-2">
                 <h1 className="text-2xl sm:text-3xl font-bold text-white">{tool.name}</h1>
@@ -110,6 +108,7 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
               </Link>
             </div>
 
+            {/* Pros */}
             {tool.pros && tool.pros.length > 0 && (
               <div className="mb-6">
                 <h3 className="text-base font-semibold text-white mb-3 flex items-center gap-2">
@@ -127,6 +126,7 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
               </div>
             )}
 
+            {/* Cons */}
             {tool.cons && tool.cons.length > 0 && (
               <div className="mb-6">
                 <h3 className="text-base font-semibold text-white mb-3 flex items-center gap-2">
@@ -144,10 +144,12 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
               </div>
             )}
 
+            {/* Best For / Not For */}
             <div className="mb-6">
               <ToolDetailList best_for={(tool as any).best_for} not_for={(tool as any).not_for} />
             </div>
 
+            {/* Tags */}
             {tool.tags && tool.tags.length > 0 && (
               <div className="mb-6">
                 <h3 className="text-base font-semibold text-white mb-3">标签</h3>
@@ -160,6 +162,7 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
             )}
           </div>
 
+          {/* Similar Tools */}
           {sameCategoryTools.length > 0 && (
             <div className="mt-8">
               <h3 className="text-base font-semibold text-white mb-4">同类工具推荐</h3>
@@ -177,6 +180,7 @@ export default function ToolDetailPage({ params }: { params: { slug: string } })
             </div>
           )}
 
+          {/* CTA */}
           <div className="mt-8">
             <Link href="/recommend" className="block p-5 rounded-xl bg-gradient-to-r from-purple-900/20 to-primary-900/20 border border-purple-800/30 hover:border-purple-700/50 transition-all group text-center">
               <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">

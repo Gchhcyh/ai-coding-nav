@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "cursor-one-week",
+    "title": "用Cursor一周的真实感受",
+    "date": "2026-06-15",
+    "tool_slug": "cursor",
+    "author": "Marvis 实测",
+    "excerpt": "从VSCode迁移到Cursor的第一周，从怀疑到真香的完整心路历程。Composer模式确实改变了我的编码方式，但也有几个坑需要注意。",
+    "content": "## 迁移第一天：几乎零成本\n\n作为一个用了5年VSCode的开发者，我原本对换编辑器非常抵触。但Cursor的迁移体验让我意外——直接导入VSCode的所有配置、插件、快捷键，10分钟就恢复了熟悉的工作环境。唯一的区别是右下角多了AI面板。\n\n## 第二天到第四天：逐渐上瘾\n\nTab补全速度确实快，很多时候我只写了函数名，它就猜到了我的意图。Composer模式是我最惊喜的功能——选中多个文件，用自然语言描述需求，它会同时修改所有相关文件。这在做全栈功能时节省了大量来回切换的时间。\n\n## 第五天：遇到坑了\n\n上下文偶尔会丢失。有一次我描述了一个复杂需求，生成了200行代码后，后续修改突然\"忘记\"了前面的约定。解决方案是重新描述上下文，但确实打断心流。另外Pro版$20/月的价格虽然值得，但免费额度用完时的提醒有点频繁。\n\n## 一周总结\n\n如果你每天编码超过4小时、做全栈开发，Cursor确实能提升30%-50%的效率。但如果你只用IDE写简单脚本或偶尔修改配置，VSCode + Copilot可能就够了。",
+    "tags": ["AI IDE", "使用体验"]
+  },
+  {
+    "slug": "claude-code-vs-copilot",
+    "title": "Claude Code vs GitHub Copilot 实际对比",
+    "date": "2026-06-10",
+    "tool_slug": "claude-code",
+    "author": "Marvis 实测",
+    "excerpt": "两周深度使用后，Claude Code在复杂任务上碾压Copilot，但Copilot在简单场景的便利性无可替代。到底该选哪个？",
+    "content": "## 测试场景\n\n我选了三个典型任务来对比：① 实现一个带认证的REST API（复杂全栈任务）② 修复10个ESLint警告（简单批量任务）③ 从零搭建一个Next.js项目（项目初始化）。\n\n## 任务一：REST API —— Claude Code完胜\n\nClaude Code只用了3轮对话就完成了完整的API实现，包括路由、中间件、数据库模型、测试。代码质量很高，错误处理考虑周全。Copilot则需要我手动引导更多，中间还被一些不准确的补全带偏了方向。\n\n## 任务二：修复ESLint警告 —— Copilot更顺手\n\n这种重复性简单任务，Copilot的IDE集成优势明显。直接在编辑器中看到警告、一键修复，不需要切到终端。Claude Code虽然也能做，但要描述每个文件路径，效率低不少。\n\n## 任务三：项目初始化 —— 平分秋色\n\n两者都能快速生成项目骨架，Claude Code的CLI体验更纯粹，Copilot在VSCode中的可视化引导对新手更友好。\n\n## 结论\n\n如果你主要做复杂全栈/后端开发，选Claude Code。如果你是前端为主、需要强大的IDE集成体验，Copilot仍然是稳妥选择。两者搭配使用其实是效率最高的方案。",
+    "tags": ["AI IDE", "对比测评", "CLI"]
+  },
+  {
+    "slug": "aider-terminal",
+    "title": "Aider命令行工具上手指南",
+    "date": "2026-06-01",
+    "tool_slug": "aider",
+    "author": "Marvis 实测",
+    "excerpt": "不需要IDE，在终端里就能和AI结对编程。Aider的Git原生集成让代码变更有迹可循，这篇文章带你30分钟上手。",
+    "content": "## 为什么选Aider\n\n如果你习惯了Vim/Neovim/Emacs的终端工作流，或者需要在远程服务器上编程，Aider是目前最好的AI结对编程工具。它直接在终端中运行，修改代码后自动git commit，整个流程干净利落。\n\n## 安装与配置\n\n```bash\npip install aider-chat\n# 设置API Key\nexport ANTHROPIC_API_KEY=your_key\n# 启动\naider\n```\n\n推荐用Claude模型作为后端，推理能力在复杂任务上明显优于GPT-4o。\n\n## 核心工作流\n\n1. 在终端中进入项目目录\n2. 运行 `aider` 启动对话\n3. 用自然语言描述需求：\"在src/api下添加一个用户认证中间件\"\n4. Aider会直接修改文件，你可以在另一个终端窗口中用vim查看差异\n5. 确认无误后，Aider自动提交commit\n\n## 一个实际例子\n\n我给一个Express项目添加了JWT认证：Aider同时修改了3个文件（路由、中间件、配置文件），生成的代码质量相当于中级开发者的水平。最让我满意的是它自动写了单元测试。\n\n## 几点提醒\n\n- 大型项目编辑速度比IDE方案慢，建议配合 `/read-only` 模式\n- API费用取决于模型和项目规模，按量计费需要留意\n- 不支持图片理解，纯代码场景最佳",
+    "tags": ["CLI", "上手指南", "开源"]
+  }
+]

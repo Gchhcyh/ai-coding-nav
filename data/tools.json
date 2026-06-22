@@ -14,13 +14,16 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "整项目上下文理解",
-      "多文件编辑",
-      "MCP原生支持"
+      "VSCode迁移零成本",
+      "Composer模式适合全栈开发",
+      "Tab补全速度最快之一",
+      "支持自定义规则和文档索引",
+      "MCP原生集成"
     ],
     "cons": [
-      "闭源",
-      "Pro版价格较高"
+      "免费额度有限，重度使用需Pro",
+      "非VSCode用户有学习曲线",
+      "偶尔上下文丢失"
     ],
     "badge": "🏆 综合最佳",
     "scenarios": [
@@ -31,7 +34,13 @@
       "前端",
       "后端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "追求最强AI编码体验的VSCode用户",
+    "not_for": "偏好免费开源工具或使用JetBrains的开发者",
+    "work_mode": "ide",
+    "added_date": "2026-01-15"
   },
   {
     "slug": "github-copilot",
@@ -48,13 +57,16 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "VS Code深度集成",
-      "GitHub生态",
-      "用户基数最大"
+      "VS Code深度集成零摩擦",
+      "GitHub生态无缝衔接",
+      "470万付费用户验证",
+      "Agent模式支持多文件编辑",
+      "代码审查一键应用"
     ],
     "cons": [
-      "满意度落后Claude Code",
-      "定制性弱"
+      "满意度调查落后Claude Code",
+      "定制性和灵活性较弱",
+      "企业版价格不低"
     ],
     "badge": "👥 社区最爱",
     "scenarios": [
@@ -65,7 +77,13 @@
       "前端",
       "后端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "GitHub生态深度用户和企业团队",
+    "not_for": "追求极致定制或需要CLI工具的开发者",
+    "work_mode": "ide",
+    "added_date": "2026-01-15"
   },
   {
     "slug": "claude-code",
@@ -82,13 +100,16 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "满意度第一",
-      "Agentic workflow",
-      "推理能力最强"
+      "2026年满意度排名第一(46%)",
+      "Agentic workflow推理链最强",
+      "终端操作无UI限制",
+      "12个月6倍增长验证",
+      "支持自定义hooks扩展"
     ],
     "cons": [
-      "仅CLI",
-      "需API付费"
+      "仅CLI，无图形界面",
+      "需API Key按量付费",
+      "大型项目Token消耗大"
     ],
     "scenarios": [
       "功能最强",
@@ -97,7 +118,13 @@
     "rec_tags": [
       "全栈",
       "后端"
-    ]
+    ],
+    "pricing_tier": "paid",
+    "difficulty": "expert",
+    "best_for": "追求最强推理能力的全栈/后端开发者",
+    "not_for": "偏好图形界面或预算有限的小团队",
+    "work_mode": "cli",
+    "added_date": "2026-01-15"
   },
   {
     "slug": "windsurf",
@@ -114,12 +141,16 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "免费额度慷慨",
-      "价格友好",
-      "多IDE支持"
+      "免费额度非常慷慨",
+      "价格$15/月低于Cursor",
+      "多IDE支持(含JetBrains)",
+      "Flare模式交互自然",
+      "约60万付费用户验证"
     ],
     "cons": [
-      "市场份额落后Cursor"
+      "市场份额明显落后Cursor",
+      "功能深度不如Cursor",
+      "插件生态尚在建设中"
     ],
     "scenarios": [
       "功能最强",
@@ -129,7 +160,13 @@
       "前端",
       "后端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "预算有限但想要AI IDE的开发者",
+    "not_for": "追求最强功能且不在意价格的用户",
+    "work_mode": "ide",
+    "added_date": "2026-01-20"
   },
   {
     "slug": "cline",
@@ -146,12 +183,16 @@
     "stars": 28000,
     "featured": true,
     "pros": [
-      "完全开源",
-      "多模型支持",
-      "社区活跃"
+      "完全开源MIT协议",
+      "支持接入任意模型API",
+      "社区活跃度极高(28k Stars)",
+      "MCP原生支持",
+      "可定制性强"
     ],
     "cons": [
-      "需自行配置模型API"
+      "需自行配置模型和API",
+      "无免费模型额度",
+      "配置门槛对新手不友好"
     ],
     "scenarios": [
       "免费",
@@ -162,7 +203,13 @@
       "前端",
       "后端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "喜欢开源且愿意自行配置模型的开发者",
+    "not_for": "不想折腾配置、希望开箱即用的新手",
+    "work_mode": "ide",
+    "added_date": "2026-01-20"
   },
   {
     "slug": "zed",
@@ -179,12 +226,16 @@
     "stars": 55000,
     "featured": false,
     "pros": [
-      "极快",
-      "原生协作",
-      "MCP集成"
+      "Rust构建极速响应",
+      "原生多人协作编辑",
+      "MCP集成开箱即用",
+      "55k Stars社区认可",
+      "内存占用极低"
     ],
     "cons": [
-      "插件生态不足"
+      "插件生态远不如VSCode",
+      "仅支持macOS/Linux(Windows预览)",
+      "AI功能相对基础"
     ],
     "scenarios": [
       "免费",
@@ -194,7 +245,13 @@
       "前端",
       "后端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "追求极速和协作编辑的前端/全栈开发者",
+    "not_for": "重度依赖VSCode插件生态的用户",
+    "work_mode": "ide",
+    "added_date": "2026-02-01"
   },
   {
     "slug": "replit",
@@ -211,14 +268,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "零配置",
-      "一键部署",
-      "移动端可用"
+      "零配置浏览器即用",
+      "一键部署全栈应用",
+      "移动端可编程",
+      "MCP全面支持",
+      "内置数据库和存储"
     ],
     "cons": [
-      "网络依赖",
-      "大型项目受限"
-    ]
+      "网络依赖必须在线",
+      "大型项目性能受限",
+      "免费版资源额度低"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "想快速原型开发的初学者和教育场景",
+    "not_for": "需要本地环境和大型项目的专业开发者",
+    "work_mode": "web",
+    "added_date": "2026-02-01"
   },
   {
     "slug": "tabnine",
@@ -235,13 +301,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "企业合规",
-      "自托管",
-      "IP清洁"
+      "40万企业用户验证",
+      "支持私有化部署",
+      "IP清洁训练数据合规",
+      "支持15+IDE",
+      "企业SSO和权限管理"
     ],
     "cons": [
-      "补全质量不及Copilot"
-    ]
+      "补全质量不及GitHub Copilot",
+      "Pro版功能受限",
+      "企业版价格偏高"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "注重代码隐私和合规的企业团队",
+    "not_for": "追求最强补全质量的个人开发者",
+    "work_mode": "ide",
+    "added_date": "2026-02-05"
   },
   {
     "slug": "amazon-q",
@@ -258,13 +334,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "AWS深度集成",
-      "免费",
-      "基础设施即代码"
+      "AWS用户完全免费",
+      "深度集成AWS控制台",
+      "基础设施即代码生成",
+      "安全合规企业级",
+      "支持25+语言"
     ],
     "cons": [
-      "仅限AWS生态"
-    ]
+      "仅限AWS生态",
+      "非AWS用户无价值",
+      "功能不如通用工具全面"
+    ],
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "AWS重度用户和云原生开发者",
+    "not_for": "非AWS生态的开发者",
+    "work_mode": "ide",
+    "added_date": "2026-02-10"
   },
   {
     "slug": "google-studio-bot",
@@ -281,14 +367,23 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "零配置",
-      "浏览器原生",
-      "前端专用"
+      "Chrome浏览器原生零配置",
+      "前端开发专项优化",
+      "基于Gemini推理强",
+      "免费使用无门槛",
+      "DevTools深度集成"
     ],
     "cons": [
-      "仅前端",
-      "公测阶段"
-    ]
+      "仅限前端开发场景",
+      "公测阶段功能不稳定",
+      "非Chrome用户无法使用"
+    ],
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "Chrome用户和前端开发者",
+    "not_for": "后端开发者或非Chrome浏览器用户",
+    "work_mode": "ide",
+    "added_date": "2026-02-15"
   },
   {
     "slug": "langgraph",
@@ -305,13 +400,23 @@
     "stars": 12000,
     "featured": true,
     "pros": [
-      "状态管理成熟",
-      "多Agent",
-      "生态完善"
+      "状态管理机制成熟",
+      "多Agent协作编排强大",
+      "LangChain生态完善",
+      "12k Stars社区认可",
+      "支持人机协作循环"
     ],
     "cons": [
-      "学习曲线陡峭"
-    ]
+      "学习曲线陡峭",
+      "文档更新跟不上版本",
+      "调试可视化工具不足"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "expert",
+    "best_for": "需要复杂多Agent编排的AI工程师",
+    "not_for": "刚入门AI开发的新手",
+    "work_mode": "api",
+    "added_date": "2026-02-15"
   },
   {
     "slug": "crewai",
@@ -328,14 +433,24 @@
     "stars": 25000,
     "featured": true,
     "pros": [
-      "角色分工直观",
-      "上手快",
-      "增长最快"
+      "角色分工直观易理解",
+      "上手快学习曲线平缓",
+      "25k Stars增长最快",
+      "CrewAI Studio可视化",
+      "Python原生无额外依赖"
     ],
     "cons": [
-      "复杂场景灵活性不足"
+      "复杂场景灵活性不足",
+      "大规模Agent调度弱",
+      "社区生态不如LangChain"
     ],
-    "badge": "👥 社区最爱"
+    "badge": "👥 社区最爱",
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "想快速上手多Agent开发的Python开发者",
+    "not_for": "需要深度定制Agent行为的专家",
+    "work_mode": "api",
+    "added_date": "2026-02-20"
   },
   {
     "slug": "autogen",
@@ -352,13 +467,23 @@
     "stars": 38000,
     "featured": false,
     "pros": [
-      "微软背书",
-      "多Agent对话",
-      "学术支持好"
+      "微软官方背书可靠",
+      "多Agent对话模式灵活",
+      "38k Stars学术社区",
+      "支持人机交互循环",
+      "与Azure生态集成"
     ],
     "cons": [
-      "API变动频繁"
-    ]
+      "API变动频繁不稳定",
+      "文档滞后于版本",
+      "调试困难"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "expert",
+    "best_for": "微软生态的AI研究者和企业开发者",
+    "not_for": "追求稳定API的生产环境用户",
+    "work_mode": "api",
+    "added_date": "2026-02-20"
   },
   {
     "slug": "dify",
@@ -375,12 +500,16 @@
     "stars": 65000,
     "featured": true,
     "pros": [
-      "可视化",
-      "RAG内置",
-      "社区最大"
+      "可视化拖拽构建AI应用",
+      "RAG管道内置开箱即用",
+      "65k Stars社区最大",
+      "开源可自托管",
+      "支持多模型切换"
     ],
     "cons": [
-      "复杂定制受限"
+      "复杂定制场景受限",
+      "自托管运维成本高",
+      "工作流编排有上限"
     ],
     "badge": "🏆 综合最佳",
     "scenarios": [
@@ -389,7 +518,13 @@
     ],
     "rec_tags": [
       "AI应用"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "beginner",
+    "best_for": "想快速构建AI应用的非深度技术用户",
+    "not_for": "需要极复杂自定义逻辑的开发者",
+    "work_mode": "web",
+    "added_date": "2026-03-01"
   },
   {
     "slug": "devin",
@@ -406,14 +541,23 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "全自动开发",
-      "自主debug",
-      "PR提交"
+      "全自动软件工程师",
+      "自主debug修复Bug",
+      "直接提交PR到GitHub",
+      "理解全代码库上下文",
+      "支持Slack集成"
     ],
     "cons": [
-      "价格极高",
-      "适用场景有限"
-    ]
+      "$500/月价格极高",
+      "适用场景仍然有限",
+      "大型项目表现不稳定"
+    ],
+    "pricing_tier": "paid",
+    "difficulty": "intermediate",
+    "best_for": "愿意投入预算追求全自动开发的团队",
+    "not_for": "个人开发者或小型创业团队",
+    "work_mode": "web",
+    "added_date": "2026-03-01"
   },
   {
     "slug": "n8n",
@@ -430,13 +574,23 @@
     "stars": 55000,
     "featured": false,
     "pros": [
-      "400+集成",
-      "可视化",
-      "自托管"
+      "400+集成连接器丰富",
+      "可视化工作流拖拽",
+      "55k Stars开源社区",
+      "支持自托管数据可控",
+      "AI节点持续增加"
     ],
     "cons": [
-      "AI节点偏基础"
-    ]
+      "AI节点功能偏基础",
+      "复杂逻辑需写代码",
+      "企业版价格不低"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "需要自动化工作流的技术运营团队",
+    "not_for": "AI Agent深度开发需求",
+    "work_mode": "web",
+    "added_date": "2026-03-05"
   },
   {
     "slug": "flowise",
@@ -453,12 +607,16 @@
     "stars": 35000,
     "featured": false,
     "pros": [
-      "拖拽构建",
-      "零代码",
-      "开源"
+      "拖拽式零代码构建",
+      "35k Stars开源社区",
+      "RAG管道开箱即用",
+      "支持100+集成",
+      "自托管数据安全"
     ],
     "cons": [
-      "性能上限低"
+      "性能上限低不适合生产",
+      "复杂逻辑无法实现",
+      "UI交互有时卡顿"
     ],
     "scenarios": [
       "上手快",
@@ -466,7 +624,13 @@
     ],
     "rec_tags": [
       "AI应用"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "beginner",
+    "best_for": "零代码构建AI应用的产品经理和分析师",
+    "not_for": "需要生产级性能和高并发的场景",
+    "work_mode": "web",
+    "added_date": "2026-03-10"
   },
   {
     "slug": "openai-codex",
@@ -483,13 +647,23 @@
     "stars": 25000,
     "featured": false,
     "pros": [
-      "开源",
-      "OpenAI生态",
-      "轻量"
+      "OpenAI官方开源",
+      "25k Stars社区认可",
+      "终端轻量Agent",
+      "沙箱安全执行",
+      "支持自然语言全操作"
     ],
     "cons": [
-      "依赖OpenAI API"
-    ]
+      "依赖OpenAI API付费",
+      "功能不如Claude Code成熟",
+      "更新频率慢"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "OpenAI生态用户和CLI爱好者",
+    "not_for": "需要图形IDE的开发者",
+    "work_mode": "cli",
+    "added_date": "2026-03-15"
   },
   {
     "slug": "smithery",
@@ -507,13 +681,23 @@
     "featured": true,
     "pros": [
       "最大MCP注册中心",
-      "一键连接",
-      "社区驱动"
+      "一键连接300+服务器",
+      "社区驱动更新快",
+      "免费使用无门槛",
+      "支持多客户端集成"
     ],
     "cons": [
-      "服务器质量参差"
+      "服务器质量参差不齐",
+      "部分服务器维护不及时",
+      "搜索和发现体验一般"
     ],
-    "badge": "🏆 最佳平台"
+    "badge": "🏆 最佳平台",
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "需要快速接入MCP工具的开发者",
+    "not_for": "需要私有化MCP注册中心的企业",
+    "work_mode": "web",
+    "added_date": "2026-03-15"
   },
   {
     "slug": "cursor-directory",
@@ -535,7 +719,13 @@
     ],
     "cons": [
       "品类单一"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "寻找Cursor配置和MCP工具的开发者",
+    "not_for": "不使用Cursor的用户",
+    "work_mode": "web",
+    "added_date": "2026-03-20"
   },
   {
     "slug": "mcp-atlassian",
@@ -557,7 +747,13 @@
     ],
     "cons": [
       "仅限Atlassian生态"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "使用Jira和Confluence的团队",
+    "not_for": "不使用Atlassian产品的团队",
+    "work_mode": "api",
+    "added_date": "2026-03-20"
   },
   {
     "slug": "mcp-brave-search",
@@ -579,7 +775,13 @@
     ],
     "cons": [
       "需API Key"
-    ]
+    ],
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "需要为AI Agent添加联网搜索能力的开发者",
+    "not_for": "已有搜索API方案的用户",
+    "work_mode": "api",
+    "added_date": "2026-03-25"
   },
   {
     "slug": "mcp-puppeteer",
@@ -601,7 +803,13 @@
     ],
     "cons": [
       "需Chrome环境"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "需要AI控制浏览器的自动化开发者",
+    "not_for": "不需要浏览器自动化的后端开发者",
+    "work_mode": "api",
+    "added_date": "2026-03-25"
   },
   {
     "slug": "github-copilot-review",
@@ -625,7 +833,13 @@
     "cons": [
       "需Copilot订阅"
     ],
-    "badge": "👥 社区最爱"
+    "badge": "👥 社区最爱",
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "GitHub Copilot订阅用户的团队",
+    "not_for": "未订阅Copilot的开发者",
+    "work_mode": "web",
+    "added_date": "2026-04-01"
   },
   {
     "slug": "coderabbit",
@@ -642,14 +856,24 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "逐行审查",
-      "PR摘要免费",
-      "融资充足"
+      "逐行PR审查精准",
+      "PR摘要功能免费",
+      "融资$60M财务稳健",
+      "支持多语言审查",
+      "与GitHub深度集成"
     ],
     "cons": [
-      "付费版较贵"
+      "付费版$24/开发者/月较贵",
+      "审查速度偶尔延迟",
+      "误报需要人工复核"
     ],
-    "badge": "🏆 综合最佳"
+    "badge": "🏆 综合最佳",
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "需要自动化PR审查的中大型团队",
+    "not_for": "小型团队或不频繁提交PR的个人",
+    "work_mode": "web",
+    "added_date": "2026-04-01"
   },
   {
     "slug": "graphite",
@@ -666,12 +890,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "堆叠PR独有",
-      "Cursor整合"
+      "堆叠PR管理独家功能",
+      "被Cursor收购整合期待",
+      "AI代码审查内置",
+      "个人仓库免费",
+      "GitHub原生集成"
     ],
     "cons": [
-      "被收购后方向不明"
-    ]
+      "被收购后方向不明朗",
+      "小团队用不上堆叠PR",
+      "未来可能并入Cursor"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "使用堆叠PR工作流的团队",
+    "not_for": "传统PR工作流的小团队",
+    "work_mode": "web",
+    "added_date": "2026-04-05"
   },
   {
     "slug": "sonarqube",
@@ -694,7 +929,13 @@
     ],
     "cons": [
       "AI能力偏弱"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要合规审计的企业级团队",
+    "not_for": "AI能力需求为主的团队",
+    "work_mode": "web",
+    "added_date": "2026-04-05"
   },
   {
     "slug": "codacy",
@@ -716,7 +957,13 @@
     ],
     "cons": [
       "市场较新"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "关注AI生成代码质量的团队",
+    "not_for": "不使用AI生成代码的团队",
+    "work_mode": "ide",
+    "added_date": "2026-04-10"
   },
   {
     "slug": "sourcery",
@@ -738,7 +985,13 @@
     ],
     "cons": [
       "仅支持Python/JS"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "Python/JavaScript开发者",
+    "not_for": "使用其他语言的后端开发者",
+    "work_mode": "ide",
+    "added_date": "2026-04-10"
   },
   {
     "slug": "codescene",
@@ -760,7 +1013,13 @@
     ],
     "cons": [
       "非传统代码审查"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "expert",
+    "best_for": "关注技术债务和团队效率的Tech Lead",
+    "not_for": "只需要常规代码审查的团队",
+    "work_mode": "web",
+    "added_date": "2026-04-15"
   },
   {
     "slug": "v0",
@@ -777,12 +1036,16 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "生成质量高",
-      "Vercel生态",
-      "即时预览"
+      "UI生成质量业界领先",
+      "Vercel生态天然集成",
+      "即时预览所见即所得",
+      "支持shadcn/ui组件",
+      "一键部署到Vercel"
     ],
     "cons": [
-      "仅React/Next.js"
+      "仅支持React/Next.js",
+      "非前端开发者用不上",
+      "复杂交互需手动调整"
     ],
     "badge": "🏆 综合最佳",
     "scenarios": [
@@ -791,7 +1054,13 @@
     ],
     "rec_tags": [
       "前端"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "React/Next.js前端开发者",
+    "not_for": "Vue/Angular或其他框架开发者",
+    "work_mode": "web",
+    "added_date": "2026-04-15"
   },
   {
     "slug": "bolt",
@@ -808,12 +1077,16 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "全栈生成",
-      "一键部署",
-      "WebContainer"
+      "一句话生成完整全栈应用",
+      "WebContainer技术即开即用",
+      "一键部署零配置",
+      "支持Node.js全栈",
+      "免费额度够用"
     ],
     "cons": [
-      "大型应用受限"
+      "大型应用性能受限",
+      "生成代码偶有bug",
+      "定制化能力不足"
     ],
     "badge": "👥 社区最爱",
     "scenarios": [
@@ -823,7 +1096,13 @@
     "rec_tags": [
       "前端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "想快速验证全栈创意的独立开发者",
+    "not_for": "需要精细控制的专业开发者",
+    "work_mode": "web",
+    "added_date": "2026-04-20"
   },
   {
     "slug": "lovable",
@@ -840,12 +1119,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "Supabase集成",
-      "欧洲合规"
+      "Supabase深度集成",
+      "欧洲团队GDPR合规",
+      "自定义域名部署",
+      "AI理解需求准确",
+      "设计感强"
     ],
     "cons": [
-      "社区较Bolt小"
-    ]
+      "社区比Bolt小很多",
+      "免费额度有限",
+      "迭代速度不如竞品"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "需要Supabase集成的全栈开发者",
+    "not_for": "已有成熟技术栈的团队",
+    "work_mode": "web",
+    "added_date": "2026-04-20"
   },
   {
     "slug": "mintlify",
@@ -863,11 +1153,22 @@
     "featured": false,
     "pros": [
       "自动生成API文档",
-      "美观"
+      "美观度业界标杆",
+      "支持多语言SDK",
+      "SEO优化内置",
+      "与代码仓库同步"
     ],
     "cons": [
-      "Pro版价格高"
-    ]
+      "Pro版$150/月价格高",
+      "非开源不可自托管",
+      "定制化模板有限"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "需要美观API文档的开发者平台",
+    "not_for": "预算有限的个人开发者",
+    "work_mode": "web",
+    "added_date": "2026-04-25"
   },
   {
     "slug": "vercel-ai-sdk",
@@ -884,13 +1185,23 @@
     "stars": 15000,
     "featured": true,
     "pros": [
-      "统一API",
-      "流式响应",
-      "Vercel原生"
+      "统一API接入多模型",
+      "流式响应开箱即用",
+      "Vercel原生零配置",
+      "15k Stars社区活跃",
+      "TypeScript类型安全"
     ],
     "cons": [
-      "仅适合Web应用"
-    ]
+      "仅适合Web应用场景",
+      "非Vercel部署需适配",
+      "文档尚在完善中"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "Vercel生态的Web应用开发者",
+    "not_for": "非Web应用或非JS/TS开发者",
+    "work_mode": "api",
+    "added_date": "2026-04-25"
   },
   {
     "slug": "firebase-studio",
@@ -907,13 +1218,23 @@
     "stars": 0,
     "featured": true,
     "pros": [
-      "Google生态",
-      "全栈覆盖",
-      "一键部署"
+      "Google全栈生态集成",
+      "AI设计数据库和API",
+      "一键部署全链路",
+      "Firebase服务免费额度",
+      "移动端SDK齐全"
     ],
     "cons": [
-      "绑定Google Cloud"
-    ]
+      "绑定Google Cloud生态",
+      "迁移成本高",
+      "国内访问速度慢"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "Google生态全栈开发者",
+    "not_for": "非Google Cloud用户",
+    "work_mode": "web",
+    "added_date": "2026-05-01"
   },
   {
     "slug": "codeium",
@@ -930,13 +1251,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "40+ IDE支持",
-      "自托管",
-      "隐私优先"
+      "支持40+ IDE覆盖广",
+      "企业自托管方案成熟",
+      "代码隐私保护优先",
+      "免费版功能慷慨",
+      "代码搜索速度快"
     ],
     "cons": [
-      "补全质量不如Copilot"
-    ]
+      "补全质量不如Copilot",
+      "品牌知名度较低",
+      "高级功能需Teams版"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "多IDE用户和注重隐私的团队",
+    "not_for": "追求极致补全质量的用户",
+    "work_mode": "ide",
+    "added_date": "2026-01-20"
   },
   {
     "slug": "sourcegraph-cody",
@@ -959,7 +1290,13 @@
     ],
     "cons": [
       "个人版功能受限"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要全代码库理解的企业开发者",
+    "not_for": "个人开发者或小型项目",
+    "work_mode": "ide",
+    "added_date": "2026-05-01"
   },
   {
     "slug": "opencat",
@@ -982,7 +1319,13 @@
     ],
     "cons": [
       "仅macOS/iOS"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "beginner",
+    "best_for": "macOS/iOS用户想要本地AI客户端",
+    "not_for": "Windows用户",
+    "work_mode": "web",
+    "added_date": "2026-05-01"
   },
   {
     "slug": "postman-ai",
@@ -1004,7 +1347,13 @@
     ],
     "cons": [
       "仅API测试场景"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "API开发和测试工程师",
+    "not_for": "非API开发场景",
+    "work_mode": "web",
+    "added_date": "2026-05-05"
   },
   {
     "slug": "supabase-ai",
@@ -1021,14 +1370,24 @@
     "stars": 80000,
     "featured": true,
     "pros": [
-      "开源",
-      "AI SQL",
-      "自托管可选"
+      "开源Firebase替代品",
+      "AI SQL编辑器自然语言",
+      "80k Stars社区庞大",
+      "自托管可选灵活部署",
+      "实时订阅内置"
     ],
     "cons": [
-      "高级功能需Pro"
+      "高级功能需Pro版",
+      "自托管运维复杂",
+      "与Firebase生态不兼容"
     ],
-    "badge": "💰 最佳免费"
+    "badge": "💰 最佳免费",
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要开源后端即服务的全栈开发者",
+    "not_for": "已绑定Firebase或AWS的团队",
+    "work_mode": "web",
+    "added_date": "2026-05-05"
   },
   {
     "slug": "neon",
@@ -1045,13 +1404,23 @@
     "stars": 15000,
     "featured": false,
     "pros": [
-      "数据库分支",
-      "即时恢复",
-      "Serverless"
+      "数据库分支如Git般灵活",
+      "即时恢复秒级回滚",
+      "Serverless按需扩缩",
+      "免费额度适合开发",
+      "PostgreSQL兼容"
     ],
     "cons": [
-      "仅PostgreSQL"
-    ]
+      "冷启动首次连接延迟",
+      "仅支持PostgreSQL",
+      "高级监控需付费"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要Serverless PostgreSQL的现代开发者",
+    "not_for": "使用MySQL或MongoDB的团队",
+    "work_mode": "web",
+    "added_date": "2026-05-10"
   },
   {
     "slug": "planetscale",
@@ -1073,7 +1442,13 @@
     ],
     "cons": [
       "免费额度低"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要零停机Schema变更的MySQL用户",
+    "not_for": "预算有限的个人开发者",
+    "work_mode": "web",
+    "added_date": "2026-05-10"
   },
   {
     "slug": "railway",
@@ -1090,13 +1465,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "一键部署",
-      "AI配置",
-      "模板丰富"
+      "一键部署全栈应用",
+      "AI辅助基础设施配置",
+      "模板市场丰富",
+      "数据库内置",
+      "免费$5额度试用"
     ],
     "cons": [
-      "价格偏高"
-    ]
+      "Pro版$20/月价格偏高",
+      "冷启动速度慢",
+      "国内访问不稳定"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "需要快速部署全栈应用的独立开发者",
+    "not_for": "需要复杂基础设施配置的企业",
+    "work_mode": "web",
+    "added_date": "2026-05-15"
   },
   {
     "slug": "render",
@@ -1119,7 +1504,13 @@
     ],
     "cons": [
       "冷启动慢"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "需要统一云平台的小型团队",
+    "not_for": "对冷启动敏感的生产环境",
+    "work_mode": "web",
+    "added_date": "2026-05-15"
   },
   {
     "slug": "lindy",
@@ -1142,7 +1533,13 @@
     ],
     "cons": [
       "定制性受限"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "想用无代码方式构建AI Agent的业务用户",
+    "not_for": "需要深度定制的开发者",
+    "work_mode": "web",
+    "added_date": "2026-05-20"
   },
   {
     "slug": "taskade",
@@ -1164,7 +1561,13 @@
     ],
     "cons": [
       "Agent能力偏基础"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "需要项目管理+AI融合的小团队",
+    "not_for": "重度AI Agent开发需求的团队",
+    "work_mode": "web",
+    "added_date": "2026-05-20"
   },
   {
     "slug": "crewai-studio",
@@ -1186,7 +1589,13 @@
     ],
     "cons": [
       "依赖CrewAI生态"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "CrewAI用户需要可视化编排",
+    "not_for": "不使用CrewAI框架的开发者",
+    "work_mode": "web",
+    "added_date": "2026-05-25"
   },
   {
     "slug": "pydantic-ai",
@@ -1203,13 +1612,23 @@
     "stars": 8000,
     "featured": false,
     "pros": [
-      "类型安全",
-      "Pydantic生态",
-      "简洁"
+      "Pydantic类型安全",
+      "Python原生开发体验",
+      "8k Stars增长快",
+      "简洁API设计",
+      "与FastAPI天然集成"
     ],
     "cons": [
-      "较新，生态待完善"
-    ]
+      "框架较新生态待完善",
+      "文档和教程不足",
+      "仅限Python"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "Python类型安全爱好者和FastAPI用户",
+    "not_for": "非Python开发者",
+    "work_mode": "api",
+    "added_date": "2026-05-25"
   },
   {
     "slug": "mcp-github",
@@ -1232,7 +1651,12 @@
     "cons": [
       "需GitHub Token"
     ],
-    "badge": "⭐ 必备工具"
+    "badge": "⭐ 必备工具",
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-slack",
@@ -1254,7 +1678,12 @@
     ],
     "cons": [
       "需Slack权限"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-filesystem",
@@ -1277,7 +1706,12 @@
     "cons": [
       "仅限授权目录"
     ],
-    "badge": "💰 最佳免费"
+    "badge": "💰 最佳免费",
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-postgres",
@@ -1299,7 +1733,12 @@
     ],
     "cons": [
       "需数据库权限"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "swe-agent",
@@ -1316,14 +1755,24 @@
     "stars": 15000,
     "featured": false,
     "pros": [
-      "SWE-bench顶尖",
-      "开源",
-      "学术验证"
+      "SWE-bench基准顶尖成绩",
+      "自动修复GitHub Issue",
+      "15k Stars学术验证",
+      "完全开源免费",
+      "支持Docker沙箱"
     ],
     "cons": [
-      "配置复杂"
+      "配置复杂入门门槛高",
+      "仅适合特定Bug修复",
+      "通用开发能力弱"
     ],
-    "badge": "💰 最佳免费"
+    "badge": "💰 最佳免费",
+    "pricing_tier": "open-source",
+    "difficulty": "expert",
+    "best_for": "需要自动修复GitHub Issue的研究者",
+    "not_for": "日常开发辅助需求",
+    "work_mode": "cli",
+    "added_date": "2026-04-15"
   },
   {
     "slug": "linearb",
@@ -1345,7 +1794,13 @@
     ],
     "cons": [
       "小型团队溢价"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "关注工程效率指标的团队管理者",
+    "not_for": "8人以下的小团队",
+    "work_mode": "web",
+    "added_date": "2026-04-15"
   },
   {
     "slug": "gitlab-duo",
@@ -1362,12 +1817,23 @@
     "stars": 0,
     "featured": false,
     "pros": [
-      "DevOps全流程",
-      "安全扫描"
+      "DevOps全流程覆盖",
+      "安全扫描内置",
+      "CI/CD优化建议",
+      "5人以下免费",
+      "GitLab生态集成"
     ],
     "cons": [
-      "GitLab生态绑定"
-    ]
+      "绑定GitLab平台",
+      "个人开发者功能少",
+      "与Copilot相比功能弱"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "GitLab平台全流程DevOps用户",
+    "not_for": "GitHub生态用户",
+    "work_mode": "web",
+    "added_date": "2026-06-10"
   },
   {
     "slug": "turbopack",
@@ -1389,7 +1855,13 @@
     ],
     "cons": [
       "仅Web前端"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "Next.js项目需要极速构建的开发者",
+    "not_for": "非前端或非Next.js项目",
+    "work_mode": "cli",
+    "added_date": "2026-06-10"
   },
   {
     "slug": "biome",
@@ -1406,12 +1878,23 @@
     "stars": 18000,
     "featured": false,
     "pros": [
-      "极快",
-      "统一工具链"
+      "Rust构建极速格式化",
+      "统一格式化+Lint工具链",
+      "18k Stars社区认可",
+      "与Prettier兼容迁移",
+      "内存占用极低"
     ],
     "cons": [
-      "不支持所有语言"
-    ]
+      "不支持所有编程语言",
+      "插件生态仍在建设",
+      "配置选项少于ESLint"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "beginner",
+    "best_for": "追求极速格式化的前端开发者",
+    "not_for": "需要完整ESLint规则生态的用户",
+    "work_mode": "cli",
+    "added_date": "2026-06-15"
   },
   {
     "slug": "aider",
@@ -1428,12 +1911,16 @@
     "stars": 41000,
     "featured": true,
     "pros": [
-      "Git原生",
-      "自动提交",
-      "多模型"
+      "Git原生集成自动提交",
+      "支持几乎所有模型API",
+      "41k Stars开源社区",
+      "终端轻量级无UI负担",
+      "地图式代码编辑精准"
     ],
     "cons": [
-      "仅终端"
+      "仅终端操作无图形界面",
+      "初次配置有一定门槛",
+      "大型项目编辑速度偏慢"
     ],
     "badge": "💻 命令行首选",
     "scenarios": [
@@ -1443,7 +1930,13 @@
     "rec_tags": [
       "全栈",
       "后端"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "expert",
+    "best_for": "终端爱好者和Git重度用户",
+    "not_for": "需要图形IDE的开发者",
+    "work_mode": "cli",
+    "added_date": "2026-02-01"
   },
   {
     "slug": "openhands",
@@ -1460,12 +1953,16 @@
     "stars": 68000,
     "featured": true,
     "pros": [
-      "最完整自主Agent",
-      "MIT协议",
-      "社区最大"
+      "最完整自主AI开发者",
+      "MIT协议完全开源",
+      "68k Stars社区最大",
+      "支持全栈开发",
+      "沙箱环境安全隔离"
     ],
     "cons": [
-      "资源消耗大"
+      "资源消耗大需强劲机器",
+      "配置复杂入门门槛高",
+      "响应速度有时偏慢"
     ],
     "badge": "💰 最佳免费",
     "scenarios": [
@@ -1475,7 +1972,13 @@
     "rec_tags": [
       "全栈",
       "AI应用"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "expert",
+    "best_for": "追求全自主AI开发的硬核开发者",
+    "not_for": "电脑配置低或需要快速上手的用户",
+    "work_mode": "cli",
+    "added_date": "2026-03-01"
   },
   {
     "slug": "roo-code",
@@ -1492,13 +1995,23 @@
     "stars": 22000,
     "featured": false,
     "pros": [
-      "结构化模式",
-      "开源",
-      "灵活"
+      "结构化模式切换独特",
+      "22k Stars开源社区",
+      "VS Code深度集成",
+      "编码/架构/审查分工",
+      "灵活可定制"
     ],
     "cons": [
-      "需要自己配模型"
-    ]
+      "需要自行配置模型",
+      "社区比Cline小",
+      "文档不够完善"
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "喜欢结构化开发模式的VSCode用户",
+    "not_for": "不需要模式切换的简单场景",
+    "work_mode": "ide",
+    "added_date": "2026-05-25"
   },
   {
     "slug": "tabby",
@@ -1515,12 +2028,16 @@
     "stars": 33000,
     "featured": false,
     "pros": [
-      "完全自托管",
-      "隐私优先",
-      "开源"
+      "完全自托管无需云端",
+      "隐私优先数据不出本机",
+      "33k Stars开源社区",
+      "支持多模型后端",
+      "支持GPU加速推理"
     ],
     "cons": [
-      "需要GPU资源"
+      "需要本地GPU资源",
+      "补全质量不如云端方案",
+      "部署维护需技术能力"
     ],
     "scenarios": [
       "免费",
@@ -1529,7 +2046,13 @@
     "rec_tags": [
       "后端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "expert",
+    "best_for": "数据安全要求极高的企业或组织",
+    "not_for": "没有GPU资源的个人开发者",
+    "work_mode": "cli",
+    "added_date": "2026-02-05"
   },
   {
     "slug": "continue",
@@ -1546,12 +2069,16 @@
     "stars": 31000,
     "featured": true,
     "pros": [
-      "多IDE",
-      "多模型",
-      "开源"
+      "支持VS Code和JetBrains",
+      "可接入任何模型自由选择",
+      "31k Stars开源社区",
+      "完全免费无付费墙",
+      "自定义slash命令"
     ],
     "cons": [
-      "配置略复杂"
+      "配置模型略复杂",
+      "UI不如Cursor精致",
+      "无官方模型需自备API"
     ],
     "badge": "💰 最佳免费",
     "scenarios": [
@@ -1561,7 +2088,13 @@
     "rec_tags": [
       "前端",
       "后端"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "想要免费且灵活的IDE AI助手用户",
+    "not_for": "不愿花时间配置模型的用户",
+    "work_mode": "ide",
+    "added_date": "2026-02-10"
   },
   {
     "slug": "goose",
@@ -1584,7 +2117,13 @@
     ],
     "cons": [
       "非专注编程"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "需要超越编程的通用AI Agent用户",
+    "not_for": "专注编程的开发者",
+    "work_mode": "cli",
+    "added_date": "2026-05-25"
   },
   {
     "slug": "kilo-code",
@@ -1606,7 +2145,13 @@
     ],
     "cons": [
       "仅JetBrains生态"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "JetBrains IDE重度用户",
+    "not_for": "VSCode用户",
+    "work_mode": "ide",
+    "added_date": "2026-05-30"
   },
   {
     "slug": "frontman",
@@ -1628,7 +2173,13 @@
     ],
     "cons": [
       "仅前端"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "浏览器优先的前端开发者",
+    "not_for": "后端或全栈开发需求",
+    "work_mode": "web",
+    "added_date": "2026-05-30"
   },
   {
     "slug": "stagewise",
@@ -1650,7 +2201,13 @@
     ],
     "cons": [
       "云端依赖"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "不想安装任何工具的云端开发者",
+    "not_for": "需要本地开发环境的用户",
+    "work_mode": "web",
+    "added_date": "2026-05-30"
   },
   {
     "slug": "bolt-diy",
@@ -1681,7 +2238,13 @@
     "rec_tags": [
       "前端",
       "全栈"
-    ]
+    ],
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "想自部署Bolt.new的开源爱好者",
+    "not_for": "需要稳定商业支持的用户",
+    "work_mode": "web",
+    "added_date": "2026-06-01"
   },
   {
     "slug": "pipertest",
@@ -1704,7 +2267,13 @@
     ],
     "cons": [
       "较新，生态小"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要MCP原生测试工具的QA工程师",
+    "not_for": "传统测试工具用户",
+    "work_mode": "api",
+    "added_date": "2026-06-01"
   },
   {
     "slug": "playwright-test-agent",
@@ -1721,15 +2290,24 @@
     "stars": 72000,
     "featured": true,
     "pros": [
-      "Playwright生态",
-      "LLM驱动",
-      "开源"
+      "Playwright生态72k Stars",
+      "LLM驱动自主探索测试",
+      "完全开源MIT协议",
+      "多浏览器支持",
+      "自动生成测试报告"
     ],
     "cons": [
-      "探索测试不可预测",
-      "Token消耗大"
+      "探索测试结果不可预测",
+      "Token消耗大成本高",
+      "仅适合Web端测试"
     ],
-    "badge": "🏆 综合最佳"
+    "badge": "🏆 综合最佳",
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "Playwright用户需要AI测试增强",
+    "not_for": "非Web测试场景",
+    "work_mode": "cli",
+    "added_date": "2026-06-05"
   },
   {
     "slug": "cypress-ai",
@@ -1746,15 +2324,24 @@
     "stars": 48000,
     "featured": false,
     "pros": [
-      "自然语言",
-      "快速原型",
-      "前端专注"
+      "自然语言cy.prompt写测试",
+      "Cypress生态48k Stars",
+      "前端测试专注",
+      "快速原型验证",
+      "CI/CD集成成熟"
     ],
     "cons": [
-      "云端依赖",
-      "限速"
+      "云端AI依赖网络",
+      "请求限速影响效率",
+      "仅前端测试"
     ],
-    "badge": "👥 社区最爱"
+    "badge": "👥 社区最爱",
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "Cypress用户需要自然语言测试",
+    "not_for": "非前端或非Cypress用户",
+    "work_mode": "cli",
+    "added_date": "2026-06-05"
   },
   {
     "slug": "keploy",
@@ -1771,14 +2358,24 @@
     "stars": 7000,
     "featured": false,
     "pros": [
-      "零代码",
-      "自动Mock",
-      "开源"
+      "零代码自动生成测试",
+      "自动Mock数据",
+      "7k Stars开源",
+      "API测试专注",
+      "CI/CD集成简单"
     ],
     "cons": [
-      "仅API测试"
+      "仅限API测试场景",
+      "社区规模较小",
+      "复杂场景需手动干预"
     ],
-    "badge": "💰 最佳免费"
+    "badge": "💰 最佳免费",
+    "pricing_tier": "open-source",
+    "difficulty": "intermediate",
+    "best_for": "API测试自动化需求的团队",
+    "not_for": "UI或E2E测试场景",
+    "work_mode": "cli",
+    "added_date": "2026-06-10"
   },
   {
     "slug": "mcp-sentry",
@@ -1800,7 +2397,12 @@
     ],
     "cons": [
       "需Sentry账号"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-aws",
@@ -1823,7 +2425,12 @@
     "cons": [
       "需AWS账号",
       "配置复杂"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-cloudflare",
@@ -1845,7 +2452,12 @@
     ],
     "cons": [
       "仅Cloudflare生态"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-linear",
@@ -1867,7 +2479,12 @@
     ],
     "cons": [
       "需Linear账号"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-notion",
@@ -1889,7 +2506,12 @@
     ],
     "cons": [
       "需Notion API"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "mcp-memory",
@@ -1911,7 +2533,12 @@
     ],
     "cons": [
       "存储管理需关注"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "对AI开发工具有需求的开发者",
+    "not_for": "暂无明确不适合人群",
+    "work_mode": "web"
   },
   {
     "slug": "applitools",
@@ -1935,7 +2562,13 @@
     "cons": [
       "专业版价格较高",
       "学习曲线中等"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要视觉回归测试的QA团队",
+    "not_for": "仅需功能测试的团队",
+    "work_mode": "web",
+    "added_date": "2026-06-15"
   },
   {
     "slug": "testsigma",
@@ -1959,7 +2592,13 @@
     "cons": [
       "复杂场景需脚本辅助",
       "社区版功能受限"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "beginner",
+    "best_for": "无编程基础的测试人员",
+    "not_for": "需要深度定制的测试开发工程师",
+    "work_mode": "web",
+    "added_date": "2026-06-15"
   },
   {
     "slug": "mabl",
@@ -1983,7 +2622,13 @@
     "cons": [
       "仅企业定价",
       "开源替代少"
-    ]
+    ],
+    "pricing_tier": "enterprise",
+    "difficulty": "beginner",
+    "best_for": "需要自愈测试的企业QA团队",
+    "not_for": "个人开发者或小型团队",
+    "work_mode": "web",
+    "added_date": "2026-06-15"
   },
   {
     "slug": "testim",
@@ -2007,7 +2652,13 @@
     "cons": [
       "高级功能较贵",
       "定制性有限"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "E2E测试维护成本高的团队",
+    "not_for": "预算有限的小团队",
+    "work_mode": "web",
+    "added_date": "2026-06-15"
   },
   {
     "slug": "functionize",
@@ -2031,7 +2682,13 @@
     "cons": [
       "企业级定价",
       "仅限 Web 测试"
-    ]
+    ],
+    "pricing_tier": "enterprise",
+    "difficulty": "intermediate",
+    "best_for": "需要大规模并行测试的企业",
+    "not_for": "中小型团队或个人开发者",
+    "work_mode": "web",
+    "added_date": "2026-06-20"
   },
   {
     "slug": "diffblue-cover",
@@ -2055,6 +2712,12 @@
     "cons": [
       "仅支持 Java",
       "企业版价格不透明"
-    ]
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "Java项目需要提升单元测试覆盖率",
+    "not_for": "非Java项目的开发者",
+    "work_mode": "ide",
+    "added_date": "2026-06-20"
   }
 ]

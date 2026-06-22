@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { useMemo } from "react";
+import linkFailures from "@/data/link-failures.json";
 
 declare global {
   interface Window {
@@ -22,6 +24,8 @@ interface ToolCardProps {
     badge?: string;
     pros?: string[];
     cons?: string[];
+    best_for?: string;
+    not_for?: string;
   };
   compareMode?: boolean;
   isCompared?: boolean;
@@ -47,6 +51,8 @@ const categoryNames: Record<string, string> = {
 };
 
 export default function ToolCard({ tool, compareMode, isCompared, onToggleCompare }: ToolCardProps) {
+  const isDead = useMemo(() => linkFailures.includes(tool.slug), [tool.slug]);
+
   const cardContent = (
     <div className="relative">
       {compareMode && (
@@ -69,9 +75,18 @@ export default function ToolCard({ tool, compareMode, isCompared, onToggleCompar
         </button>
       )}
 
+      {isDead && (
+        <span className="absolute top-2 right-2 z-10 px-2 py-0.5 rounded text-[10px] font-medium bg-red-500/15 text-red-400 border border-red-500/30">
+          可能已下线
+        </span>
+      )}
+
       {tool.badge && (
         <div className="mb-1.5">
-          <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-primary-500/10 text-primary-300 border border-primary-500/20">
+          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-gradient-to-r from-amber-500/20 to-amber-600/10 text-amber-100 border border-amber-500/40 shadow-sm shadow-amber-500/10">
+            <svg className="w-3 h-3 text-amber-300" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13 2L4.5 14H11L8 22L19.5 10H13L16 2H13Z"/>
+            </svg>
             {tool.badge}
           </span>
         </div>
@@ -98,6 +113,24 @@ export default function ToolCard({ tool, compareMode, isCompared, onToggleCompar
       <p className="text-sm text-gray-400 leading-relaxed mb-4 line-clamp-2">
         {tool.description}
       </p>
+
+      {/* Compact best_for / not_for */}
+      {(tool.best_for || tool.not_for) && (
+        <div className="flex flex-wrap gap-1.5 mb-3">
+          {tool.best_for && (
+            <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-medium bg-green-500/10 text-green-400 border border-green-500/20" title={tool.best_for}>
+              <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+              适合: {tool.best_for.length > 12 ? tool.best_for.slice(0, 12) + "…" : tool.best_for}
+            </span>
+          )}
+          {tool.not_for && (
+            <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-medium bg-red-500/10 text-red-400 border border-red-500/20" title={tool.not_for}>
+              <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
+              不适合: {tool.not_for.length > 12 ? tool.not_for.slice(0, 12) + "…" : tool.not_for}
+            </span>
+          )}
+        </div>
+      )}
 
       <div className="flex items-center justify-between">
         <div className="flex flex-wrap gap-1.5">
@@ -129,9 +162,7 @@ export default function ToolCard({ tool, compareMode, isCompared, onToggleCompar
 
   return (
     <Link
-      href={tool.url}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={`/tools/${tool.slug}`}
       onClick={() => {
         window.gtag?.("event", "outbound_click", {
           event_category: "engagement",

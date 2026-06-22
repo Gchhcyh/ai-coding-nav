@@ -1,3 +1,4 @@
+"use client";
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -6,10 +7,6 @@ import Footer from "@/components/Footer";
 import ToolDetailList from "@/components/ToolDetailList";
 import allTools from "@/data/tools.json";
 import { categoryMap } from "@/lib/tools";
-
-export function generateStaticParams() {
-  return allTools.map((t: any) => ({ slug: t.slug }));
-}
 
 const categoryColors: Record<string, string> = {
   "ai-ide": "bg-blue-500/10 text-blue-400 border-blue-500/20",
