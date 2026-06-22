@@ -3,6 +3,7 @@
 import { useState, useMemo, Suspense, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Header from "@/components/Header";
+import Link from "next/link";
 import SearchBar from "@/components/SearchBar";
 import CategoryFilter from "@/components/CategoryFilter";
 import ToolCard from "@/components/ToolCard";
@@ -132,6 +133,30 @@ function HomePage() {
                 更新
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Recommend Entry Card */}
+        <section className="pb-4 px-4">
+          <div className="max-w-7xl mx-auto">
+            <Link
+              href="/recommend"
+              className="block p-5 rounded-xl bg-gradient-to-r from-purple-900/20 to-primary-900/20 border border-purple-800/30 hover:border-purple-700/50 transition-all group"
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-base font-semibold text-white group-hover:text-purple-400 transition-colors">
+                    不确定用哪个？
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-0.5">
+                    花 30 秒回答 3 个问题，帮你精准匹配
+                  </p>
+                </div>
+                <span className="shrink-0 px-4 py-2 rounded-lg bg-purple-600/20 text-purple-400 text-sm font-medium group-hover:bg-purple-600/30 transition-colors">
+                  开始推荐 →
+                </span>
+              </div>
+            </Link>
           </div>
         </section>
 

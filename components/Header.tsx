@@ -21,6 +21,12 @@ export default function Header() {
             <Link href="/" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
               首页
             </Link>
+            <Link href="/compare" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              对比
+            </Link>
+            <Link href="/recommend" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              推荐
+            </Link>
             <a
               href="https://github.com/Gchhcyh/ai-coding-nav/issues/new"
               target="_blank"
@@ -51,6 +57,8 @@ export default function Header() {
         {mobileOpen && (
           <nav className="md:hidden pb-4 space-y-2">
             <Link href="/" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>首页</Link>
+            <Link href="/compare" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>对比</Link>
+            <Link href="/recommend" className="block px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-800 text-sm" onClick={()=>setMobileOpen(false)}>推荐</Link>
             <a href="https://github.com/Gchhcyh/ai-coding-nav/issues/new" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 rounded-lg text-primary-400 hover:bg-gray-800 text-sm font-medium" onClick={()=>setMobileOpen(false)}>提交工具 →</a>
           </nav>
         )}

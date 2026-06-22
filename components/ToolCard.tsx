@@ -19,6 +19,7 @@ interface ToolCardProps {
     tags: string[];
     stars: number;
     featured: boolean;
+    badge?: string;
     pros?: string[];
     cons?: string[];
   };
@@ -68,6 +69,13 @@ export default function ToolCard({ tool, compareMode, isCompared, onToggleCompar
         </button>
       )}
 
+      {tool.badge && (
+        <div className="mb-1.5">
+          <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-primary-500/10 text-primary-300 border border-primary-500/20">
+            {tool.badge}
+          </span>
+        </div>
+      )}
       <div className="flex items-start justify-between mb-3">
         <h3 className="text-base font-semibold text-white group-hover:text-primary-400 transition-colors pr-8">
           {tool.name}
