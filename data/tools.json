@@ -2719,5 +2719,165 @@
     "not_for": "非Java项目的开发者",
     "work_mode": "ide",
     "added_date": "2026-06-20"
+  },
+  {
+    "slug": "grok-build",
+    "name": "Grok Build (xAI)",
+    "description": "xAI 推出的终端 AI 编程代理，集成 Grok 模型，支持远程 Web 编码环境。",
+    "url": "https://x.ai/grok",
+    "category": "ai-ide",
+    "pricing": "免费（内测）+ Grok订阅",
+    "tags": [
+      "CLI",
+      "Agent",
+      "Web"
+    ],
+    "stars": 12000,
+    "featured": true,
+    "pros": [
+      "原生集成Grok推理能力",
+      "Web远程编码环境零配置",
+      "终端CLI体验流畅",
+      "xAI生态深度融合"
+    ],
+    "cons": [
+      "目前仅内测，名额有限",
+      "不支持IDE插件",
+      "对非xAI生态用户吸引力有限"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "已经在用Grok/xAI生态的开发者",
+    "not_for": "需要VSCode集成的前端用户",
+    "work_mode": "cli",
+    "added_date": "2026-06-22"
+  },
+  {
+    "slug": "qt-creator-20",
+    "name": "Qt Creator 20 (with ACP)",
+    "description": "Qt Creator IDE 20版本内置AI Agent支持，通过ACP协议集成Claude Code/Codex/Gemini CLI/Copilot。",
+    "url": "https://www.qt.io/product/qt-creator",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "C++",
+      "Qt",
+      "Agent"
+    ],
+    "stars": 3500,
+    "featured": false,
+    "pros": [
+      "原生集成多AI Agent",
+      "ACP协议标准化",
+      "Zen Mode无干扰编程",
+      "开源免费"
+    ],
+    "cons": [
+      "主要面向C++/Qt生态",
+      "社区规模较小",
+      "新功能兼容性待验证"
+    ],
+    "pricing_tier": "free",
+    "difficulty": "intermediate",
+    "best_for": "C++和Qt开发者需要IDE内置AI代理",
+    "not_for": "非C++/桌面应用开发者",
+    "work_mode": "ide",
+    "added_date": "2026-06-17"
+  },
+  {
+    "slug": "pearai",
+    "name": "PearAI",
+    "description": "开源 AI 代码编辑器，Cursor 的开源替代品，支持多模型切换。",
+    "url": "https://trypear.ai",
+    "category": "ai-ide",
+    "pricing": "免费开源",
+    "tags": [
+      "IDE",
+      "开源",
+      "多模型"
+    ],
+    "stars": 18000,
+    "featured": true,
+    "pros": [
+      "完全开源免费",
+      "多模型自由切换",
+      "Cursor同类体验零成本",
+      "社区活跃增长快"
+    ],
+    "cons": [
+      "插件生态不如VSCode丰富",
+      "部分高级功能迭代中",
+      "文档和教程仍然较少"
+    ],
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "想要Cursor体验但不想付费的开发者",
+    "not_for": "重度依赖VSCode生态插件的用户",
+    "work_mode": "ide",
+    "added_date": "2026-06-01"
+  },
+  {
+    "slug": "trae",
+    "name": "Trae (字节跳动)",
+    "description": "字节跳动推出的AI原生IDE，深度集成豆包模型，中文开发者友好。",
+    "url": "https://www.trae.ai",
+    "category": "ai-ide",
+    "pricing": "免费",
+    "tags": [
+      "IDE",
+      "中文",
+      "Agent"
+    ],
+    "stars": 22000,
+    "featured": true,
+    "pros": [
+      "中文交互极佳",
+      "国内网络直接可用",
+      "豆包模型深度优化",
+      "完全免费"
+    ],
+    "cons": [
+      "国际社区资源较少",
+      "只支持豆包模型",
+      "英文代码场景不如Cursor"
+    ],
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "中文开发者、国内网络环境友好使用",
+    "not_for": "需要英文生态和国际社区的开发者",
+    "work_mode": "ide",
+    "added_date": "2026-06-10"
+  },
+  {
+    "slug": "github-spark",
+    "name": "GitHub Spark",
+    "description": "GitHub 推出的 AI 应用构建工具，自然语言描述需求自动生成全栈Web应用。",
+    "url": "https://github.com/features/spark",
+    "category": "dev-tools",
+    "pricing": "免费（预览版）",
+    "tags": [
+      "全栈",
+      "GitHub",
+      "应用生成"
+    ],
+    "stars": 15000,
+    "featured": true,
+    "pros": [
+      "自然语言直接生成应用",
+      "GitHub生态无缝集成",
+      "一键部署到GitHub Pages",
+      "零配置上手快"
+    ],
+    "cons": [
+      "目前仅预览版",
+      "生成代码可控性低",
+      "复杂业务逻辑受限"
+    ],
+    "pricing_tier": "free",
+    "difficulty": "beginner",
+    "best_for": "想快速原型验证想法的全栈开发者",
+    "not_for": "需要精细控制代码结构的企业项目",
+    "work_mode": "web",
+    "added_date": "2026-06-15"
   }
 ]

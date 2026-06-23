@@ -1,7 +1,7 @@
 # Link Check Report
 
-**Date**: 2026-06-22  
-**Total**: 84 | **Passed**: 74 | **Failed**: 10
+**Date**: 2026-06-23  
+**Total**: 89 | **Passed**: 77 | **Failed**: 12
 
 | # | Tool | URL | Status |
 |---|------|-----|--------|
@@ -15,3 +15,5 @@
 | 8 | Slack MCP Server | https://github.com/slack/mcp-server | 404 |
 | 9 | LinearB | https://linearb.io | 429 |
 | 10 | Goose | https://block.github.io/goose | read ECONNRESET |
+| 11 | Grok Build (xAI) | https://x.ai/grok | Timeout |
+| 12 | Qt Creator 20 (with ACP) | https://www.qt.io/product/qt-creator | 404 |

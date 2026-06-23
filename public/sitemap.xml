@@ -340,4 +340,24 @@
     <loc>https://ai-coding-nav.pages.dev/tools/diffblue-cover</loc>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/grok-build</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/qt-creator-20</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/pearai</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/trae</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/github-spark</loc>
+    <priority>0.90</priority>
+  </url>
 </urlset>
