@@ -1,5 +1,6 @@
 
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,6 +10,24 @@ import { categoryMap } from "@/lib/tools";
 
 export function generateStaticParams() {
   return allTools.map((t: any) => ({ slug: t.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const tool = allTools.find((t: any) => t.slug === params.slug);
+  if (!tool) return { title: "工具未找到 - AI Coding Nav" };
+
+  const desc = tool.description.length > 150
+    ? tool.description.slice(0, 147) + "..."
+    : tool.description;
+
+  return {
+    title: `${tool.name} - AI编程工具评测 | AI Coding Nav`,
+    description: desc,
+    openGraph: {
+      title: `${tool.name} - AI编程工具评测 | AI Coding Nav`,
+      description: desc,
+    },
+  };
 }
 
 const categoryColors: Record<string, string> = {
