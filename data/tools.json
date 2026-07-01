@@ -1573,7 +1573,7 @@
     "slug": "crewai-studio",
     "name": "CrewAI Studio",
     "description": "CrewAI 可视化IDE，拖拽式设计多Agent协作流程，一键部署。",
-    "url": "https://crewai.com/studio",
+    "url": "https://crewai.com",
     "category": "agent-framework",
     "pricing": "免费 + Enterprise",
     "tags": [
@@ -2756,7 +2756,7 @@
     "slug": "qt-creator-20",
     "name": "Qt Creator 20 (with ACP)",
     "description": "Qt Creator IDE 20版本内置AI Agent支持，通过ACP协议集成Claude Code/Codex/Gemini CLI/Copilot。",
-    "url": "https://www.qt.io/product/qt-creator",
+    "url": "https://www.qt.io/blog/qt-creator-20-released",
     "category": "ai-ide",
     "pricing": "免费开源",
     "tags": [
@@ -2879,5 +2879,136 @@
     "not_for": "需要精细控制代码结构的企业项目",
     "work_mode": "web",
     "added_date": "2026-06-15"
+  },
+  {
+    "slug": "superset",
+    "name": "Superset",
+    "description": "Agent时代的开源IDE，同时运行10+个AI编程Agent互不干扰，Git Worktree沙箱隔离，统一Diff审查所有Agent改动。",
+    "url": "https://github.com/superset-sh/superset",
+    "category": "ai-ide",
+    "pricing": "免费 + Pro $20/月",
+    "tags": [
+      "IDE",
+      "Agent",
+      "开源",
+      "多Agent"
+    ],
+    "stars": 11800,
+    "featured": true,
+    "pros": [
+      "多Agent并行不冲突",
+      "Git Worktree沙箱隔离",
+      "统一Diff审查",
+      "支持Claude Code/Codex/Cursor等所有CLI Agent",
+      "开源可自托管"
+    ],
+    "cons": [
+      "需自行订阅底层AI模型",
+      "目前仅macOS正式支持",
+      "学习曲线较陡"
+    ],
+    "badge": "🏆 综合最佳",
+    "scenarios": [
+      "多Agent并行",
+      "IDE用户",
+      "团队协作"
+    ],
+    "rec_tags": [
+      "全栈",
+      "后端",
+      "前端"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "expert",
+    "best_for": "需要同时运行多个AI编程Agent的资深开发者",
+    "not_for": "只使用单个AI工具的开发者，或偏好轻量级工具的用户",
+    "work_mode": "ide",
+    "added_date": "2026-07-01"
+  },
+  {
+    "slug": "testsprite",
+    "name": "TestSprite 3.0",
+    "description": "12个AI Agent并行自动测试你的应用，像真实用户一样点击找Bug，Auto-Healing选择器自动适应UI变化。",
+    "url": "https://www.testsprite.com",
+    "category": "testing-qa",
+    "pricing": "免费 + Starter $19/月 + Standard $69/月",
+    "tags": [
+      "测试",
+      "Agent",
+      "自动化",
+      "CI/CD"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "12个并行浏览器实例同时测试",
+      "Auto-Healing自动适应UI变化",
+      "CI/CD无缝集成(GitHub Actions/GitLab CI)",
+      "自主修复+重试",
+      "MCP支持Claude Code调用"
+    ],
+    "cons": [
+      "对大厂已有的Playwright/Cypress体系不兼容",
+      "无像素级视觉回归测试",
+      "国际化支持较弱"
+    ],
+    "scenarios": [
+      "自动化测试",
+      "CI/CD集成"
+    ],
+    "rec_tags": [
+      "前端",
+      "后端",
+      "全栈"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "没有QA团队的初创公司或独立开发者，需要快速建立自动化测试覆盖",
+    "not_for": "已有成熟的Playwright/Cypress测试体系的大团队，或只需测试静态页面的场景",
+    "work_mode": "web",
+    "added_date": "2026-07-01"
+  },
+  {
+    "slug": "compyle",
+    "name": "Compyle",
+    "description": "\"Lovable for Software Engineers\"——先问清楚再写代码的AI编程Agent，研究+规划+实施+验证四阶段，不盲目自主运行。",
+    "url": "https://compyle.ai",
+    "category": "agent-framework",
+    "pricing": "免费 + Starter $20/月 + Pro $50/月",
+    "tags": [
+      "Agent",
+      "协作",
+      "规划",
+      "代码生成"
+    ],
+    "stars": 0,
+    "featured": false,
+    "pros": [
+      "先问清楚再写代码，减少方向错误",
+      "自动扫描代码库理解架构",
+      "多Agent监控代码质量",
+      "Claude/GPT/Gemini多模型支持"
+    ],
+    "cons": [
+      "简单任务效率不如直接编码",
+      "产品早期，功能迭代中",
+      "免费版额度有限"
+    ],
+    "scenarios": [
+      "复杂功能开发",
+      "代码重构",
+      "需求模糊的项目"
+    ],
+    "rec_tags": [
+      "全栈",
+      "前端",
+      "后端"
+    ],
+    "pricing_tier": "freemium",
+    "difficulty": "intermediate",
+    "best_for": "需要AI辅助做复杂功能开发和代码重构的全栈工程师",
+    "not_for": "需要极速完成简单编码任务或偏好完全自主Agent的开发者",
+    "work_mode": "web",
+    "added_date": "2026-07-01"
   }
 ]

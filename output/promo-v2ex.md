@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: c42aa5508ae870f5f4e8c8fd825baac2_9ccd5d11704811f1897e5254002afed2
+    ReservedCode1: w5oEkF3RWUIHsXKKME+7rmuUTx6KTvvuK+ObB34HJCbm6xemONhGFnajwdA2KWtMtIammNx66s+EG+BxeuZqa9pjeu26zy6X1MbnaIML77slLiWBJ0heQP09kOWhv14ZR4Im9bU0Q/zgZFaSaN54+h7oplwMKNroI0HvmSdlBogq562tTWYKuUXIdqk=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: c42aa5508ae870f5f4e8c8fd825baac2_9ccd5d11704811f1897e5254002afed2
+    ReservedCode2: w5oEkF3RWUIHsXKKME+7rmuUTx6KTvvuK+ObB34HJCbm6xemONhGFnajwdA2KWtMtIammNx66s+EG+BxeuZqa9pjeu26zy6X1MbnaIML77slLiWBJ0heQP09kOWhv14ZR4Im9bU0Q/zgZFaSaN54+h7oplwMKNroI0HvmSdlBogq562tTWYKuUXIdqk=
+---
+
 # V2EX 推广文案
 
 **节点**：分享创造 (/go/create) 或 程序员 (/go/programmer)
@@ -45,3 +56,4 @@
 ---
 
 PS：Product Hunt 上也上线了，感兴趣可以给个 upvote：https://www.producthunt.com/products/ai-coding-nav
+*（内容由AI生成，仅供参考）*

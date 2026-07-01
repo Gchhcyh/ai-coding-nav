@@ -64,8 +64,8 @@ console.log('\nCategories:');
 const categories = {};
 tools.forEach(t => { categories[t.category] = (categories[t.category] || 0) + 1; });
 const expectedCats = {
-  'ai-ide': 18, 'agent-framework': 13, 'mcp-tools': 15,
-  'code-review': 9, 'testing-qa': 10, 'dev-tools': 19,
+  'ai-ide': 23, 'agent-framework': 14, 'mcp-tools': 15,
+  'code-review': 9, 'testing-qa': 11, 'dev-tools': 20,
 };
 Object.entries(expectedCats).forEach(([cat, expected]) => {
   check(`${cat}: ${categories[cat] || 0} (expected ${expected})`,

@@ -1,14 +1,14 @@
 [
+  "amazon-q",
   "google-studio-bot",
   "n8n",
   "cursor-directory",
   "mcp-atlassian",
   "mcp-brave-search",
   "firebase-studio",
-  "crewai-studio",
+  "render",
   "mcp-slack",
   "linearb",
   "goose",
-  "grok-build",
-  "qt-creator-20"
+  "grok-build"
 ]

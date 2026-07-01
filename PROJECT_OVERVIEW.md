@@ -1,6 +1,6 @@
 # AI Coding Nav — 项目总览文档
 
-> 最后更新：2026-06-21 | 最新 commit：`a6496b2`
+> 最后更新：2026-07-01 | 最新 commit：技能系统部署
 
 ---
 
@@ -24,9 +24,9 @@
 
 | 指标 | 数值 |
 |------|------|
-| AI 编程工具总数 | **84** |
+| AI 编程工具总数 | **89** |
 | 分类数 | **6** |
-| SSG 静态导出页面数 | **88** |
+| SSG 静态导出页面数 | **94** |
 
 ### 分类明细
 
@@ -179,6 +179,41 @@ ai-coding-nav/
 | （更早） | P1 修复：Newsletter JSONP、GA4 事件、README 更新、verify-build.js |
 | （更早） | P0 修复：sitemap、分类补全、URL 同步、OG/Favicon |
 | （更早） | 核心功能开发：首页、筛选、搜索、详情页、排序、响应式 |
+
+---
+
+## 9. AI 自动化技能系统
+
+基于 Claude Code Skill 机制的自动化运营系统，灵感来自 [Show Me The Money](https://github.com/iamzifei/show-me-the-money)。
+
+### 架构
+```
+.claude/skills/
+├── _guardrails.md           ← 安全护栏（所有 skill 遵守）
+├── _tools-schema.md         ← tools.json 27 字段参考
+├── _categories.md           ← 6 分类定义 + 关键词
+├── tool-scout/SKILL.md      ← /tool-scout 工具发现引擎
+├── review-writer/SKILL.md   ← /review-writer 测评写作器
+├── link-doctor/SKILL.md     ← /link-doctor 链接健康维护
+├── promo-forge/SKILL.md     ← /promo-forge 推广文案工厂
+├── state/                   ← 跨会话状态（gitignore）
+└── templates/               ← 输出模板
+```
+
+### 技能列表
+
+| 技能 | 命令 | 功能 |
+|------|------|------|
+| 工具发现 | `/tool-scout [--auto-add]` | 扫描 GitHub/PH/HN/Reddit 发现新 AI 工具，评分后入库 |
+| 测评写作 | `/review-writer --mode coverage\|compare\|update\|single` | 自动生成中文实测测评 |
+| 链接维护 | `/link-doctor` | 运行链接检查 + 分析失效 + 修复 URL |
+| 推广文案 | `/promo-forge --platform v2ex\|reddit\|hn\|zhihu\|twitter` | 生成各平台推广文案 |
+
+### 护栏设计
+- 四层护栏：编辑边界 → 并发限制 → 变更验证 → 运行记录
+- 只写入 `data/*.json` 和 `output/*.md`，不碰源码
+- 只追加不删除，默认生成报告等人工审核
+- 所有变更后自动运行 `verify-build.js`
 
 ---
 

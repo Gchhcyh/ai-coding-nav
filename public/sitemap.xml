@@ -360,4 +360,16 @@
     <loc>https://ai-coding-nav.pages.dev/tools/github-spark</loc>
     <priority>0.90</priority>
   </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/superset</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/testsprite</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ai-coding-nav.pages.dev/tools/compyle</loc>
+    <priority>0.80</priority>
+  </url>
 </urlset>

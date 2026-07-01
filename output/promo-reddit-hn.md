@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: c42aa5508ae870f5f4e8c8fd825baac2_9c1b7fc2704811f1897e5254002afed2
+    ReservedCode1: iiWV1k/qxhkuMBLAqyirrKx49BtuXoIUK99b5KxHOYqeZ2nSx5Xmx3oZYGtfD75azfg8fFsBiiZHPRFb7YULtpkAoMmzCAXsJD72Dw0fCJDwU8ul13LBUyak6XUwkxPPwyw61Du5z0RBn7nxk7g6Eumqfw0hhEHp6S0pwXSeHbpcb1qOoc7g9shHOvY=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: c42aa5508ae870f5f4e8c8fd825baac2_9c1b7fc2704811f1897e5254002afed2
+    ReservedCode2: iiWV1k/qxhkuMBLAqyirrKx49BtuXoIUK99b5KxHOYqeZ2nSx5Xmx3oZYGtfD75azfg8fFsBiiZHPRFb7YULtpkAoMmzCAXsJD72Dw0fCJDwU8ul13LBUyak6XUwkxPPwyw61Du5z0RBn7nxk7g6Eumqfw0hhEHp6S0pwXSeHbpcb1qOoc7g9shHOvY=
+---
+
 # 社区推广文案 — Reddit & Hacker News
 
 ---
@@ -53,3 +64,4 @@ Tech: Next.js 14 (static export), Tailwind, Fuse.js for search. No backend, no d
 
 https://ai-coding-nav.pages.dev
 https://github.com/Gchhcyh/ai-coding-nav
+*（内容由AI生成，仅供参考）*
